@@ -8,5 +8,6 @@ function setup() {
 function draw() {
   // put drawing code here
   background(51);
-  circle(mouseX, mouseY, 10)
+  circle(mouseX, mouseY, 10);
+  text("Hello World!", 0, 10);
 }
