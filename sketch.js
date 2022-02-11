@@ -9,5 +9,5 @@ function draw() {
   // put drawing code here
   background(51);
   circle(mouseX, mouseY, 10);
-  text("Hello World!", 0, 10);
+  text("Goodbye World!", 0, 10);
 }
