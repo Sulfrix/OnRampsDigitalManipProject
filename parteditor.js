@@ -11,7 +11,7 @@ let currPart;
 
 function setup() {
     // put setup code here
-    createCanvas(windowWidth, windowHeight - 21);
+    createCanvas(windowWidth - 260, windowHeight - 20);
 }
 
 function draw() {
@@ -21,7 +21,7 @@ function draw() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight - 21);
+    resizeCanvas(windowWidth - 260, windowHeight - 20);
 }
 
 function newPart() {

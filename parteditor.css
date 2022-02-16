@@ -8,6 +8,7 @@ main {
     width: 100%;
     background: rgb(70, 70, 70);
     height: 20px;
+    display: flex;
 }
 
 button {
@@ -15,6 +16,7 @@ button {
     border: none;
     height: 20px;
     cursor: pointer;
+    margin: 0px 2px;
 }
 
 button:hover {
@@ -27,4 +29,14 @@ button:active {
 
 #app {
     width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    background: rgb(70, 70, 70);
+    height: 100%;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
 }
