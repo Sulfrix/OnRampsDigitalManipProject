@@ -1,0 +1,30 @@
+main {
+    width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bottombar {
+    width: 100%;
+    background: rgb(70, 70, 70);
+    height: 20px;
+}
+
+button {
+    background: rgb(255, 165, 0);
+    border: none;
+    height: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(255, 192, 74);   
+}
+
+button:active {
+    background: rgb(214, 139, 0);
+}
+
+#app {
+    width: fit-content;
+}
