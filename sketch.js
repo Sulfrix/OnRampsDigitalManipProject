@@ -98,6 +98,7 @@ function draw() {
         squares[i].sizeX, 
         squares[i].sizeY
         );
+        text(i, squares[i].x + squares[i].sizeX/2, squares[i].y + squares[i].sizeY/2);
 
       // Code for drawing attachment points
       /*
@@ -113,6 +114,34 @@ function draw() {
   }
 }
 
+function keyTyped(){
+
+  if(key === 'w' || key === "s"){
+
+    let alreadyClicked = false;
+
+    for(index = 0; index < squares.length; i++){
+      let i = squareOrder[index];
+
+      if(
+        mouseX > squares[i].x && mouseX < squares[i].x + squares[i].sizeX &&
+        mouseY > squares[i].y && mouseY < squares[i].y + squares[i].sizeY &&
+        !alreadyClicked
+      ){
+        alreadyClicked = true;
+
+        if(key === 'w'){
+          squares[i].sizeX *= 1.01;
+          squares[i].sizeY *= 1.01;
+        }
+        else if (key === 's'){
+          squares[i].sizeX *= 0.99;
+          squares[i].sizeY *= 0.99;
+        }
+      }
+    }
+  }
+}
 
 function mousePressed(){
 
@@ -153,11 +182,12 @@ function mouseReleased(){
       
       let minDist = squares[i].elipson;
       let currentAtch = 999;
+
       let finalJ;
       let finalA2;
+      let finalA1;
 
       for(a1 = 0; a1 < squares[i].atch.length; a1++){
-        
 
         for(j = 0; j < squares.length; j++){
           for(a2 = 0; a2 < squares[j].atch.length; a2++){
@@ -175,32 +205,27 @@ function mouseReleased(){
                 dist < squares[i].elipson &&
                 attachProximity < currentAtch
               )) &&
-
               i != j && 
-
               Math.abs(squares[i].atch[a1].direction - squares[j].atch[a2].direction) == 180
               ){
 
-              lastAtch = attachProximity;
+              currentAtch = attachProximity;
+              
+              console.log("MinDist: " + minDist + " Dist: " + dist);
+              
+              if(minDist < dist){
+                for(num = 0; num < squares[i].lastAtch.length; num++){
+                  console.log(squares[i].lastAtch[num]);
+                }
+                console.log('');
+              }
               
               minDist = dist;
-              squares[i].x = 
-                squares[j].x + 
-                (1 + squares[j].atch[a2].x) * squares[j].sizeX/2 - 
-                (1 + squares[i].atch[a1].x) * squares[i].sizeX/2;
-              squares[i].y = 
-                squares[j].y + 
-                (1 + squares[j].atch[a2].y) * squares[j].sizeY/2 - 
-                (1 + squares[i].atch[a1].y) * squares[i].sizeY/2;
-
-
+              
               finalJ = j;
               finalA2 = a2;
-
-              for(let num in squares[i].lastAtch){
-                console.log(squares[i].lastAtch[num]);
-              }
-              console.log("End");
+              finalA1 = a1;
+              
               
               /*
               console.log(
@@ -243,7 +268,22 @@ function mouseReleased(){
         }
       }
 
-      squares[i].lastAtch.push([finalJ, finalA2]);
+      try{
+        squares[i].x = 
+          squares[finalJ].x + 
+          (1 + squares[finalJ].atch[finalA2].x) * squares[finalJ].sizeX/2 - 
+          (1 + squares[i].atch[finalA1].x) * squares[i].sizeX/2;
+        squares[i].y = 
+          squares[finalJ].y + 
+          (1 + squares[finalJ].atch[finalA2].y) * squares[finalJ].sizeY/2 - 
+          (1 + squares[i].atch[finalA1].y) * squares[i].sizeY/2;
+
+        squares[i].lastAtch.push([finalJ, finalA2]);
+        //console.log("Correct: " + squares[i].atch.length + " Wrong: " + squares[i+1].atch.length);
+      }catch (ReferenceError){ 
+        // ReferenceErrors are normal here, it just means the square didn't snap to anything
+      }
+      
     }
   }
 }
