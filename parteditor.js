@@ -1,5 +1,6 @@
 /// <reference path="types/global.d.ts"/>
 
+
 let defaultPart = {
     name: "",
     type: "default",
@@ -7,17 +8,21 @@ let defaultPart = {
     attachments: []
 }
 
-let currPart;
+/**
+ * @type {EditorWorkspace}
+ */
+let workspace;
 
 function setup() {
     // put setup code here
     createCanvas(windowWidth - 260, windowHeight - 20);
+    workspace = new Workspace();
 }
 
 function draw() {
     // put drawing code here
     background(51);
-
+    workspace.draw();
 }
 
 function windowResized() {
@@ -32,5 +37,44 @@ function newPart() {
     newPart.name = name;
     newPart.type = type;
     newPart.image = image;
-    currPart = new Part(newPart);
+    let instPart = new Part(newPart);
+    let workPart = new EditorPart(0, 0, instPart);
+    workspace.parts.push(workPart);
+    updatePartsList();
+}
+
+function loadPart() {
+    let path = prompt("Enter the URL path to a part JSON file.");
+    loadJSON(path, {}, "json", (data) => {
+        workspace.parts.push(new EditorPart(0, 0, new Part(data)));
+        updatePartsList();
+    });
+}
+
+function updatePartsList() {
+    let partList = document.getElementById("partList");
+    partList.innerHTML = "";
+    for (let editpart of workspace.parts) {
+        let part = editpart.part;
+        partList.appendChild(createPartListItem(part));
+    }
+}
+
+/**
+ * 
+ * @param {Part} part 
+ */
+function createPartListItem(part) {
+    let base = document.createElement("div");
+    let name = document.createElement("span");
+    name.innerHTML = part.name;
+    let exportButton = document.createElement("button");
+    exportButton.innerHTML = "Export";
+    exportButton.addEventListener("click", () => {
+        save(part.serialize(), part.name + ".json");
+    })
+    base.appendChild(name);
+    base.appendChild(exportButton);
+    base.classList.add("partListItem");
+    return base;
 }

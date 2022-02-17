@@ -5,30 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Part Editor</title>
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            width: 100vw;
-            height: 100vh;
-        }
-    </style>
     <link rel="stylesheet" href="parteditor.css">
     <script src="./p5.js"></script>
     <!-- <script src="./addons/p5.sound.js"></script> -->
+    <script src="lib/Attachment.js"></script>
     <script src="lib/Part.js"></script>
+    <script src="lib/Workspace.js"></script>
+    <script src="lib/WorkspacePart.js"></script>
     <script src="parteditor.js"></script>
 </head>
 
 <body>
     <div id="app">
-        <div class="sidebar"></div>
+        <div class="sidebar">
+            <h2>Parts</h2>
+            <div id="partList"></div>
+        </div>
         <main>
             <div class="bottombar">
-                <button>New Part</button>
-                <button>Load Part</button>
+                <button onclick="newPart()">New Part</button>
+                <button onclick="loadPart()">Load Part</button>
+                <span class="bottombar-tip">Tip: Load multiple parts to correct scale.</span>
             </div>
         </main>
     </div>
