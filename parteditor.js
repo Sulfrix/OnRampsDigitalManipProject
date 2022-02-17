@@ -13,15 +13,20 @@ let defaultPart = {
  */
 let workspace;
 
+let canvas;
+
 function setup() {
     // put setup code here
-    createCanvas(windowWidth - 260, windowHeight - 20);
-    workspace = new Workspace();
+    canvas = createCanvas(windowWidth - 260, windowHeight - 20);
+    workspace = new EditorWorkspace();
+    pInput.registerCanvas(canvas);
+    pInput.registerWorkspace(workspace);
 }
 
 function draw() {
     // put drawing code here
     background(51);
+    workspace.update();
     workspace.draw();
 }
 
@@ -45,6 +50,10 @@ function newPart() {
 
 function loadPart() {
     let path = prompt("Enter the URL path to a part JSON file.");
+    pathLoad(path)
+}
+
+function pathLoad(path) {
     loadJSON(path, {}, "json", (data) => {
         workspace.parts.push(new EditorPart(0, 0, new Part(data)));
         updatePartsList();
