@@ -13,7 +13,9 @@
 // There is code to make it attach to the nearest block,
 // But that isn't seeming to work.
 //
-// I'm working on making 
+// I'm working on making the objects switch attachment points when clicked
+// Right now this has no effect whatsoever
+
 
 
 const atch = {
