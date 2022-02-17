@@ -65,16 +65,18 @@ function updatePartsList() {
     partList.innerHTML = "";
     for (let editpart of workspace.parts) {
         let part = editpart.part;
-        partList.appendChild(createPartListItem(part));
+        partList.appendChild(createPartListItem(part, editpart));
     }
 }
 
 /**
  * 
- * @param {Part} part 
+ * @param {EditorPart} part 
  */
-function createPartListItem(part) {
+function createPartListItem(part, editpart) {
     let base = document.createElement("div");
+    let baseLine = document.createElement("div");
+    let expand = document.createElement("div");
     let name = document.createElement("span");
     name.innerHTML = part.name;
     let exportButton = document.createElement("button");
@@ -82,8 +84,38 @@ function createPartListItem(part) {
     exportButton.addEventListener("click", () => {
         save(part.serialize(), part.name + ".json");
     })
-    base.appendChild(name);
-    base.appendChild(exportButton);
+    let expandButton = document.createElement("button");
+    expandLogic(part, expand, expandButton);
+    expandButton.classList.add("iconButton");
+    expandButton.classList.add("autoMargin");
+    expandButton.addEventListener("click", () => {
+        part.inspectorExpanded = !part.inspectorExpanded;
+        expandLogic(part, expand, expandButton);
+    })
+    let deleteButton = document.createElement("button");
+    deleteButton.innerHTML = "Delete";
+    deleteButton.addEventListener("click", () => {
+        workspace.parts.splice(workspace.parts.indexOf(editpart), 1);
+        updatePartsList();
+    })
+    baseLine.appendChild(name);
+    baseLine.appendChild(expandButton);
+    base.appendChild(baseLine);
+    base.appendChild(expand);
+    expand.appendChild(exportButton);
+    expand.appendChild(deleteButton);
     base.classList.add("partListItem");
+    baseLine.classList.add("partListRow")
+    expand.classList.add("partListExpand");
     return base;
+}
+
+function expandLogic(part, expand, expandButton) {
+    if (part.inspectorExpanded) {
+        expand.classList.add("expanded");
+        expandButton.innerHTML = "▲"
+    } else {
+        expand.classList.remove("expanded");
+        expandButton.innerHTML = "▼"
+    }
 }

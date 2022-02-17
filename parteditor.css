@@ -42,6 +42,58 @@ button:active {
     background: rgb(214, 139, 0);
 }
 
+.autoMargin {
+    margin-left: auto;
+}
+
+.iconButton {
+    background: transparent;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.iconButton:hover {
+    background: rgba(255, 255, 255, 0.241);
+    text-shadow: 0 0 2px white;
+}
+
+.iconButton:active {
+    background: rgba(255, 255, 255, 0.308);
+    text-shadow: 0 0 3px white;
+}
+
+#partList {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.partListItem {
+    padding: 2px 5px 2px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.partListItem:nth-child(even) {
+    background:rgba(0, 0, 0, 0.1)
+}
+
+.partListItem:last-child {
+    border-bottom-color: transparent;
+}
+
+.partListItem span {
+    line-height: 20px;
+}
+
+.partListRow {
+    display: flex;
+    flex-direction: row;
+}
+
 #app {
     width: fit-content;
     display: flex;
@@ -54,6 +106,17 @@ button:active {
     width: 260px;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
+}
+
+.partListExpand {
+    display: none;
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    padding: 5px 2px;
+}
+
+.expanded {
+    display: block;
 }
 
 .bottombar-tip {
