@@ -19,7 +19,7 @@
 
 
 const atch = {
-  x: 0, y: 0, direction: ""
+  x: 0, y: 0, direction: 0
 }
 
 const square = {
@@ -35,13 +35,13 @@ const square = {
   ]
 }
 square.atch[0].x = 1;
-square.atch[0].direction = "right";
+square.atch[0].direction = 0;
 square.atch[1].y = 1;
-square.atch[1].direction = "up";
+square.atch[1].direction = 90;
 square.atch[2].x = -1;
-square.atch[2].direction = "left";
+square.atch[2].direction = 180;
 square.atch[3].y = -1;
-square.atch[3].direction = "down";
+square.atch[3].direction = 270;
 
 
 let squares = [];
@@ -119,9 +119,7 @@ function mousePressed(){
   let alreadyClicked = false;
   let temp;
 
-
-  // Backward For loop
-  // You should prioritize squares at the front of the image
+  
   for(index = 0; index < squares.length; index++){
     let i = squareOrder[index];
 
@@ -132,13 +130,6 @@ function mousePressed(){
     ){
       alreadyClicked = true;
 
-      // This part does not work
-      // It is to make squares recently picked to appear at the front of the image
-      /*
-      temp = squares[i];
-      squares.remove[i];
-      squares.push(temp);
-      */
       squares[i].clicked = true;
       squares[i].clickX = mouseX - squares[i].x;
       squares[i].clickY = mouseY - squares[i].y;
@@ -187,14 +178,8 @@ function mouseReleased(){
 
               i != j && 
 
-              ((squares[i].atch[a1].direction == "right" && 
-              squares[j].atch[a2].direction == "left") ||
-              (squares[i].atch[a1].direction == "up" && 
-              squares[j].atch[a2].direction == "down") ||
-              (squares[i].atch[a1].direction == "left" && 
-              squares[j].atch[a2].direction == "right") ||
-              (squares[i].atch[a1].direction == "down" && 
-              squares[j].atch[a2].direction == "up"))){
+              Math.abs(squares[i].atch[a1].direction - squares[j].atch[a2].direction) == 180
+              ){
 
               lastAtch = attachProximity;
               
