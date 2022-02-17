@@ -2,5 +2,6 @@
   "name": "M4 Reciever",
   "type": "reciever",
   "image": "assets/images/m4.png",
+  "scale": 1,
   "attachments": []
 }

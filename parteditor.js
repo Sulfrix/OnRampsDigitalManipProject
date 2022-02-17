@@ -5,6 +5,7 @@ let defaultPart = {
     name: "",
     type: "default",
     image: "",
+    scale: 1,
     attachments: []
 }
 
@@ -98,10 +99,22 @@ function createPartListItem(part, editpart) {
         workspace.parts.splice(workspace.parts.indexOf(editpart), 1);
         updatePartsList();
     })
+    let scaleSlider = document.createElement("input");
+    scaleSlider.type = "range";
+    scaleSlider.min = 0.1;
+    scaleSlider.max = 2;
+    scaleSlider.step = "any";
+    scaleSlider.ariaLabel = "Scale";
+    scaleSlider.value = 1;
+    scaleSlider.classList.add("propertySlider")
+    scaleSlider.addEventListener('change', (e) => {
+        part.scale = scaleSlider.value;
+    })
     baseLine.appendChild(name);
     baseLine.appendChild(expandButton);
     base.appendChild(baseLine);
     base.appendChild(expand);
+    expand.appendChild(scaleSlider);
     expand.appendChild(exportButton);
     expand.appendChild(deleteButton);
     base.classList.add("partListItem");

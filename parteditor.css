@@ -115,8 +115,13 @@ button:active {
     padding: 5px 2px;
 }
 
+.propertySlider {
+    width: 98%;
+}
+
 .expanded {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .bottombar-tip {
