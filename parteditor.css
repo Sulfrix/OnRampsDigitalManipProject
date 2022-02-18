@@ -43,7 +43,7 @@ button:active {
 }
 
 .autoMargin {
-    margin-left: auto;
+    margin-left: auto !important;
 }
 
 .iconButton {
@@ -54,6 +54,7 @@ button:active {
     text-align: center;
     padding: 0;
     border-radius: 10px;
+    margin: 0;
 }
 
 .iconButton:hover {
@@ -74,15 +75,15 @@ button:active {
 
 .partListItem {
     padding: 2px 5px 2px 5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+    border: 1px solid transparent;
+}
+
+.partListItem.selected {
+    border: 1px dashed rgba(255, 255, 255, 0.171) !important;
 }
 
 .partListItem:nth-child(even) {
     background:rgba(0, 0, 0, 0.1)
-}
-
-.partListItem:last-child {
-    border-bottom-color: transparent;
 }
 
 .partListItem span {

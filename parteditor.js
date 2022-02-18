@@ -26,7 +26,8 @@ function setup() {
 
 function draw() {
     // put drawing code here
-    background(51);
+    //background(51);
+    background(220);
     workspace.update();
     workspace.draw();
 }
@@ -88,33 +89,32 @@ function createPartListItem(part, editpart) {
     let expandButton = document.createElement("button");
     expandLogic(part, expand, expandButton);
     expandButton.classList.add("iconButton");
-    expandButton.classList.add("autoMargin");
     expandButton.addEventListener("click", () => {
         part.inspectorExpanded = !part.inspectorExpanded;
         expandLogic(part, expand, expandButton);
     })
+    let selectButton = document.createElement("button")
+    selectButton.innerHTML = "✎";
+    if (workspace.selectedPart == editpart) {
+        base.classList.add("selected");
+    }
+    selectButton.addEventListener('click', () => {
+        workspace.selectedPart = editpart;
+        updatePartsList();
+    })
+    selectButton.classList.add("iconButton");
+    selectButton.classList.add("autoMargin");
     let deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Delete";
     deleteButton.addEventListener("click", () => {
         workspace.parts.splice(workspace.parts.indexOf(editpart), 1);
         updatePartsList();
     })
-    let scaleSlider = document.createElement("input");
-    scaleSlider.type = "range";
-    scaleSlider.min = 0.1;
-    scaleSlider.max = 2;
-    scaleSlider.step = "any";
-    scaleSlider.ariaLabel = "Scale";
-    scaleSlider.value = 1;
-    scaleSlider.classList.add("propertySlider")
-    scaleSlider.addEventListener('change', (e) => {
-        part.scale = scaleSlider.value;
-    })
     baseLine.appendChild(name);
+    baseLine.appendChild(selectButton);
     baseLine.appendChild(expandButton);
     base.appendChild(baseLine);
     base.appendChild(expand);
-    expand.appendChild(scaleSlider);
     expand.appendChild(exportButton);
     expand.appendChild(deleteButton);
     base.classList.add("partListItem");
