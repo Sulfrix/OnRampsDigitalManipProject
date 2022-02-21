@@ -14,8 +14,13 @@ body {
 main {
     width: fit-content;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
 }
 
 .bottombar {
@@ -91,12 +96,6 @@ button:active {
 }
 
 .partListRow {
-    display: flex;
-    flex-direction: row;
-}
-
-#app {
-    width: fit-content;
     display: flex;
     flex-direction: row;
 }
