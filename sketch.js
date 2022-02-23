@@ -15,7 +15,8 @@
 
 
 const atch = {
-  x: 0, y: 0, direction: 0
+  x: 0, y: 0, direction: 0,
+  attached: [], parent: false
 }
 
 const square = {
@@ -32,12 +33,14 @@ const square = {
 }
 square.atch[0].x = 1;
 square.atch[0].direction = 0;
+square.atch[0].parent = true;
 square.atch[1].y = 1;
 square.atch[1].direction = 90;
 square.atch[2].x = -1;
 square.atch[2].direction = 180;
 square.atch[3].y = -1;
 square.atch[3].direction = 270;
+square.atch[3].parent = true;
 
 
 let squares = [];
@@ -64,6 +67,8 @@ function setup() {
 function draw() {
   // put drawing code here
   background(200);
+
+  zoomInput();
 
   for(index = 0; index < squares.length; index++){
     let i = squareOrder[index];
@@ -110,14 +115,14 @@ function draw() {
   }
 }
 
-function keyTyped(){
+function zoomInput(){
 
-  if(key === 'w' || key === "s"){
+  if(keyIsDown(87) || keyIsDown(83)){
 
     let alreadyClicked = false;
 
-    for(index = 0; index < squares.length; i++){
-      let i = squareOrder[index];
+    for(index = 0; index < squares.length; index++){
+      let i = squareOrder[squareOrder.length - index - 1];
 
       if(
         mouseX > squares[i].x && mouseX < squares[i].x + squares[i].sizeX &&
@@ -125,14 +130,49 @@ function keyTyped(){
         !alreadyClicked
       ){
         alreadyClicked = true;
+        let inputValue;
+        let isAttached = -1;
 
-        if(key === 'w'){
-          squares[i].sizeX *= 1.01;
-          squares[i].sizeY *= 1.01;
+        if(keyIsDown(87)){
+          inputValue = 1;
         }
-        else if (key === 's'){
-          squares[i].sizeX *= 0.99;
-          squares[i].sizeY *= 0.99;
+        else if (keyIsDown(83)){
+          inputValue = -1
+        }
+
+        for(a = 0; a < 4; a++){
+          if(squares[i].atch[a].attached.length != 0){
+            if(isAttached == -1){
+              isAttached = a;
+            }
+            else{
+              isAttached = -2;
+            }
+          }
+        }
+        
+        if(isAttached != -2){
+          squares[i].sizeX *= (1 + inputValue / 100);
+          squares[i].sizeY *= (1 + inputValue / 100);
+
+          if(isAttached == -1){
+            squares[i].x -= inputValue * squares[i].sizeX / 200;
+            squares[i].y -= inputValue * squares[i].sizeY / 200;
+          }
+          else if (isAttached == 0){
+            squares[i].x -= inputValue * squares[i].sizeX / 100;
+            squares[i].y -= inputValue * squares[i].sizeY / 200;
+          }
+          else if (isAttached == 1){
+            squares[i].x -= inputValue * squares[i].sizeY / 200;
+          }
+          else if (isAttached == 2){
+            squares[i].y -= inputValue * squares[i].sizeY / 200;
+          }
+          else if (isAttached == 3){
+            squares[i].x -= inputValue * squares[i].sizeY / 200;
+            squares[i].y -= inputValue * squares[i].sizeX / 100;
+          }
         }
       }
     }
@@ -146,7 +186,7 @@ function mousePressed(){
 
   
   for(index = 0; index < squares.length; index++){
-    let i = squareOrder[index];
+    let i = squareOrder[squareOrder.length - index-1];
 
     if(
       mouseX > squares[i].x && mouseX < squares[i].x + squares[i].sizeX &&
@@ -159,7 +199,15 @@ function mousePressed(){
       squares[i].clickX = mouseX - squares[i].x;
       squares[i].clickY = mouseY - squares[i].y;
 
-      squareOrder.splice(index, 1);
+      for(a = 0; a < 4; a++){
+        if(squares[i].atch[a].attached.length != 0){
+
+          squares[squares[i].atch[a].attached[0]].atch[squares[i].atch[a].attached[1]].attached = [];
+          squares[i].atch[a].attached = [];
+        }
+      }
+
+      squareOrder.splice(squareOrder.length - index-1, 1);
       squareOrder.push(i);
     }
   }
@@ -184,15 +232,15 @@ function mouseReleased(){
       let finalA1;
 
       for(a1 = 0; a1 < squares[i].atch.length; a1++){
-
+      
         for(j = 0; j < squares.length; j++){
           for(a2 = 0; a2 < squares[j].atch.length; a2++){
 
             let dist = Math.hypot(
             (squares[i].x + (1 + squares[i].atch[a1].x) * squares[i].sizeX/2) - 
             (squares[j].x + (1 + squares[j].atch[a2].x) * squares[j].sizeX/2),
-            (squares[i].y + (1 + squares[i].atch[a1].y) * squares[i].sizeY/2) - 
-            (squares[j].y + (1 + squares[j].atch[a2].y) * squares[j].sizeY/2));
+            (squares[i].y - (1 + squares[i].atch[a1].y) * squares[i].sizeY/2) - 
+            (squares[j].y - (1 + squares[j].atch[a2].y) * squares[j].sizeY/2));
 
             let attachProximity = squares[i].lastAtch.findIndex(item => item === [j, a2]);
 
@@ -223,6 +271,7 @@ function mouseReleased(){
               finalA1 = a1;
               
               
+              
               /*
               console.log(
                 " a1.x: " + (squares[i].x + (1 + squares[i].atch[a1].x) * squares[i].size/2) + 
@@ -233,6 +282,7 @@ function mouseReleased(){
               );*/
             }
 
+            /*
             // After this point is for debugging purposes only
             else if(
               i != j && 
@@ -246,36 +296,42 @@ function mouseReleased(){
               (squares[i].atch[a1].direction == "down" && 
               squares[j].atch[a2].direction == "up"))){
 
-              /*
+              
               console.log(Math.hypot(
                 (squares[i].x + (1 + squares[i].atch[a1].x) * squares[i].size/2) - 
                 (squares[j].x + (1 + squares[j].atch[a2].x) * squares[j].size/2),
                 (squares[i].y + (1 + squares[i].atch[a1].y) * squares[i].size/2) - 
                 (squares[j].y + (1 + squares[j].atch[a2].y) * squares[j].size/2)) -
                 squares[i].atch[a1].elipson);
-              */
+              
               
             }
             else if (i != j){
 
-              //console.log(squares[i].atch[a1].direction + " " + squares[j].atch[a2].direction);
-            }
+              console.log(squares[i].atch[a1].direction + " " + squares[j].atch[a2].direction);
+            }*/
           }
         }
       }
 
       try{
+
         squares[i].x = 
           squares[finalJ].x + 
           (1 + squares[finalJ].atch[finalA2].x) * squares[finalJ].sizeX/2 - 
           (1 + squares[i].atch[finalA1].x) * squares[i].sizeX/2;
         squares[i].y = 
           squares[finalJ].y + 
-          (1 + squares[finalJ].atch[finalA2].y) * squares[finalJ].sizeY/2 - 
-          (1 + squares[i].atch[finalA1].y) * squares[i].sizeY/2;
+          (1 - squares[finalJ].atch[finalA2].y) * squares[finalJ].sizeY/2 - 
+          (1 - squares[i].atch[finalA1].y) * squares[i].sizeY/2;
 
         squares[i].lastAtch.push([finalJ, finalA2]);
-        //console.log("Correct: " + squares[i].atch.length + " Wrong: " + squares[i+1].atch.length);
+        
+
+        squares[i].atch[finalA1].attached = [finalJ, finalA2];
+        squares[finalJ].atch[finalA2].attached = [i, finalA1];
+        
+
       }catch (ReferenceError){ 
         // ReferenceErrors are normal here, it just means the square didn't snap to anything
       }
