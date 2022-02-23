@@ -3,5 +3,14 @@
   "type": "reciever",
   "image": "assets/images/m4.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": 1,
+      "y": 1,
+      "type": "reciever",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1
+    }
+  ]
 }
