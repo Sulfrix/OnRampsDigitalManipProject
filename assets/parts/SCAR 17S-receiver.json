@@ -1,0 +1,7 @@
+{
+  "name": "SCAR 17S-receiver",
+  "type": "receiver",
+  "image": "assets\\images\\SCAR 17S-receiver.png",
+  "scale": 1,
+  "attachments": []
+}
