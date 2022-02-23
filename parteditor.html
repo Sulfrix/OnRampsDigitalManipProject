@@ -19,6 +19,13 @@
 
 <body>
     <div id="app">
+        <div class="bottombar"> <!-- it says bottom bar but it works as a top bar too -->
+            <div class="buttontoggle-container" id="tool-picker">
+                <button class="active">Test Button</button>
+                <button>Test Button 2</button>
+                <button>Test Button 3</button>
+            </div>
+        </div>
         <main>
             <div class="sidebar">
                 <h2>Parts</h2>
@@ -26,6 +33,7 @@
             </div>
         </main>
         <div class="bottombar">
+            
             <button onclick="newPart()">New Part</button>
             <button onclick="loadPart()">Load Part</button>
             <button onclick="pathLoad('assets/parts/M4 Reciever.json')">Quick Load</button>

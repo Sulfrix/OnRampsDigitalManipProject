@@ -18,7 +18,7 @@ let canvas;
 
 function setup() {
     // put setup code here
-    canvas = createCanvas(windowWidth - 260, windowHeight - 20);
+    canvas = createCanvas(windowWidth - 260, windowHeight - 40);
     workspace = new EditorWorkspace();
     pInput.registerCanvas(canvas);
     pInput.registerWorkspace(workspace);
@@ -33,7 +33,7 @@ function draw() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth - 260, windowHeight - 20);
+    resizeCanvas(windowWidth - 260, windowHeight - 40);
 }
 
 function newPart() {

@@ -1,3 +1,7 @@
+html {
+    background: rgb(70, 70, 70);
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -9,6 +13,7 @@ body {
     color: white;
     font-size: 13px;
     overflow: hidden;
+    
 }
 
 main {
@@ -29,6 +34,55 @@ main {
     height: 20px;
     display: flex;
     overflow: hidden;
+    box-sizing: border-box;
+}
+
+.buttontoggle-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5px;
+    gap: 2px;
+    box-sizing: border-box;
+}
+
+.buttontoggle-container button {
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background: transparent;
+    color: white;
+}
+
+.buttontoggle-container button:hover {
+    background: rgba(255, 255, 255, 0.116);
+}
+
+.buttontoggle-container button:active {
+    background: rgba(255, 255, 255, 0.192);
+}
+
+.buttontoggle-container button.active {
+    margin: 0;
+    border: 1px solid transparent;
+    background: rgb(255, 165, 0);
+    color: black;
+}
+
+.buttontoggle-container button.active:hover {
+    background: rgb(255, 192, 74);
+}
+
+.buttontoggle-container button.active:active {
+    background: rgb(214, 139, 0);
+}
+
+.buttontoggle-container button:first-child {
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 8px;
+}
+
+.buttontoggle-container button:last-child {
+    border-radius: 0px 10px 10px 0px;
+    padding-right: 8px;
 }
 
 button {
@@ -84,7 +138,7 @@ button:active {
 }
 
 .partListItem.selected {
-    border: 1px dashed rgba(255, 255, 255, 0.171) !important;
+    border: 1px dashed rgb(255, 246, 114) !important;
 }
 
 .partListItem:nth-child(even) {
@@ -106,7 +160,7 @@ button:active {
     width: 260px;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+    max-height: calc(100vh - 40px);
 }
 
 .partListExpand {
