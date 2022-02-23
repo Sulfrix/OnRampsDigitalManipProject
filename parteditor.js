@@ -99,7 +99,12 @@ function createPartListItem(part, editpart) {
         base.classList.add("selected");
     }
     selectButton.addEventListener('click', () => {
-        workspace.selectedPart = editpart;
+        if(workspace.selectedPart == editpart){
+            workspace.selectedPart = null;
+        }
+        else{
+            workspace.selectedPart = editpart;
+        }
         updatePartsList();
     })
     selectButton.classList.add("iconButton");
