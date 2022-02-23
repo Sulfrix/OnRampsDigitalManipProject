@@ -5,8 +5,16 @@
   "scale": 1,
   "attachments": [
     {
-      "x": 1,
-      "y": 1,
+      "x": -0.9,
+      "y": -0.7,
+      "type": "reciever",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1
+    },
+    {
+      "x": 0.96,
+      "y": -0.72,
       "type": "reciever",
       "parent": true,
       "rotation": 0,
