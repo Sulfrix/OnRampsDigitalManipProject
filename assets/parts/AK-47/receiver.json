@@ -3,5 +3,18 @@
   "type": "reciver",
   "image": "assets\\images\\AK-47-receiver.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -0.706,
+      "y": -0.7,
+      "type": "barrel",
+      "parent": true
+    },
+    {
+      "x": 0.964,
+      "y": -0.49,
+      "type": "stock",
+      "parent": true
+    }
+  ]
 }

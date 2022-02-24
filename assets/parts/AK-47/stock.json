@@ -3,5 +3,12 @@
   "type": "stock",
   "image": "assets\\images\\AK-47-stock.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.62,
+      "type": "stock",
+      "parent": false
+    }
+  ]
 }
