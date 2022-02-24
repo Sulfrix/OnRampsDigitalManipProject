@@ -3,5 +3,12 @@
   "type": "muzzle",
   "image": "assets\\images\\Berretta 50 cal-muzzle.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": 1,
+      "y": 0,
+      "type": "muzzle",
+      "parent": false
+    }
+  ]
 }
