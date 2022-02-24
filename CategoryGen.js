@@ -31,4 +31,4 @@ for (let folder of basefolder) {
 
 console.log(object);
 
-fs.writeFileSync("categories.json", JSON.stringify(object), "utf-8");
+fs.writeFileSync("categories.json", JSON.stringify(object, null, 2), "utf-8");
