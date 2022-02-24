@@ -77,15 +77,55 @@ function closeDialog() {
 
 function loadPart() {
     openDialog("loadDialog");
+    let list = document.getElementById("partLoadList");
+    list.innerHTML = "";
+    console.log("File list opened");
+    for (let cat in categories) {
+        let catList = categories[cat];
+        let categoryElement = createCategoryElement(cat, catList);
+        list.appendChild(categoryElement);
+
+    }
 }
 
 function loadButton() {
     let input = document.getElementById("fileURL");
-    for (let cat in categories) {
-        let catList = categories[cat];
-        createCategoryElement(cat, catList);
-    }
     pathLoad(input.value)
+}
+
+function createCategoryElement(cat, catList) {
+    console.log(`Generating file folder ${cat}`);
+    let base = document.createElement("div");
+    base.classList.add("fileCategory");
+    let title = document.createElement("div");
+    title.classList.add("title")
+    title.innerHTML = cat;
+    base.appendChild(title);
+    let expandButton = document.createElement("button");
+    expandButton.classList.add("iconButton");
+    expandButton.innerHTML = "▼"
+    title.prepend(expandButton);
+    let files = document.createElement("div");
+    expandButton.addEventListener('click', () => {
+        if (files.classList.contains("hidden")) {
+            expandButton.innerHTML = "▼";
+            files.classList.remove("hidden")
+        } else {
+            expandButton.innerHTML = "▲"
+            files.classList.add("hidden")
+        }
+    })
+    files.classList.add("files");
+    for (let file of catList) {
+        let fileEle = document.createElement("div");
+        fileEle.innerHTML = file;
+        fileEle.addEventListener('click', () => {
+            pathLoad(file);
+        })
+        files.appendChild(fileEle);
+    }
+    base.appendChild(files);
+    return base;
 }
 
 function pathLoad(path) {

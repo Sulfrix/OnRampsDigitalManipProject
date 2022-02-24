@@ -200,6 +200,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .hidden {
@@ -210,12 +211,16 @@ h2 {
     background: rgb(70, 70, 70);
     padding: 25px;
     box-sizing: border-box;
+    max-height: 100vh;
 }
 
 #loadDialog {
     width: 75vw;
-    min-width: 500px;
-    
+    min-width: 300px;
+    max-width: 750px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #loadDialog input {
@@ -230,6 +235,42 @@ h2 {
     border-radius: 5px;
 }
 
+#partLoadList {
+    overflow-y: auto;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
 .buttons {
     display: flex;
+}
+
+.fileCategory {
+    background: rgba(255, 255, 255, 0.159);
+}
+
+.fileCategory .title {
+    font-weight: bold;
+    padding: 4px 5px;
+    background: rgba(255, 255, 255, 0.159);
+}
+
+.title .iconButton {
+    margin-right: 5px;
+}
+
+.files > div {
+    padding-left: 10px;
+    padding: 3px 10px;
+    user-select: none;
+}
+
+.files > div:hover {
+    background: rgba(255, 255, 255, 0.055);
+}
+
+.files > div:active {
+    background: rgba(255, 255, 255, 0.089);
 }
