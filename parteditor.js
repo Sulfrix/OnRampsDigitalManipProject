@@ -42,11 +42,14 @@ function windowResized() {
     resizeCanvas(windowWidth - 260, windowHeight - 40);
 }
 
+function newPartButton() {
+    openDialog("newDialog");
+}
+
 function newPart() {
-    let name = prompt("Enter a name for the part.");
-    let type = prompt("Enter the part's type.");
-    let image = prompt("Enter an image path for the part.");
-    let newPart = Object.assign({}, defaultPart);
+    let name = document.getElementById("partName").value;
+    let type = document.getElementById("partType").value;
+    let image = document.getElementById("partImage").value;
     newPart.name = name;
     newPart.type = type;
     newPart.image = image;
@@ -70,7 +73,7 @@ function openDialog(which) {
 function closeDialog() {
     if (currentDialog) {
         document.getElementById("dialogOverlay").classList.add("hidden");
-        document.getElementById(currentDialog).classList.remove("hidden");
+        document.getElementById(currentDialog).classList.add("hidden");
         currentDialog = null;
     }
 }
@@ -94,6 +97,7 @@ function loadButton() {
 }
 
 function createCategoryElement(cat, catList) {
+    let input = document.getElementById("fileURL");
     console.log(`Generating file folder ${cat}`);
     let base = document.createElement("div");
     base.classList.add("fileCategory");
@@ -120,7 +124,7 @@ function createCategoryElement(cat, catList) {
         let fileEle = document.createElement("div");
         fileEle.innerHTML = file;
         fileEle.addEventListener('click', () => {
-            pathLoad(file);
+            input.value = file;
         })
         files.appendChild(fileEle);
     }
