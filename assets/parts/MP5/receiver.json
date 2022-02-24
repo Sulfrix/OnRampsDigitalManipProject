@@ -1,7 +1,7 @@
 {
   "name": "receiver",
   "type": "receiver",
-  "image": "assets\\images\\MP5-receiver.png",
+  "image": "assets\\images\\MP5\\receiver.png",
   "scale": 1,
   "attachments": []
 }

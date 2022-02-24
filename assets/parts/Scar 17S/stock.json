@@ -1,7 +1,7 @@
 {
   "name": "SCAR 17S-stock",
   "type": "stock",
-  "image": "assets\\images\\SCAR 17S-stock.png",
+  "image": "assets\\images\\SCAR 17S\\stock.png",
   "scale": 1,
   "attachments": []
 }

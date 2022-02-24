@@ -1,7 +1,7 @@
 {
   "name": "Berretta 50 cal-barrel",
   "type": "barrel",
-  "image": "assets\\images\\Berretta 50 cal-barrel.png",
+  "image": "assets\\images\\Berretta 50 cal\\barrel.png",
   "scale": 1,
   "attachments": [
     {

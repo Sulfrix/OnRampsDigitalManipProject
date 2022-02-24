@@ -1,7 +1,7 @@
 {
   "name": "stock",
   "type": "stock",
-  "image": "assets\\images\\SKS-stock.png",
+  "image": "assets\\images\\SKS\\stock.png",
   "scale": 1,
   "attachments": []
 }

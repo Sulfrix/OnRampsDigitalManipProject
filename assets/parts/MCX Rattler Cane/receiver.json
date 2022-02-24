@@ -1,7 +1,7 @@
 {
   "name": "receiver",
   "type": "receiver",
-  "image": "assets\\images\\MCX Rattler Cane-receiver.png",
+  "image": "assets\\images\\MCX Rattler Cane\\receiver.png",
   "scale": 1,
   "attachments": []
 }

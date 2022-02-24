@@ -1,7 +1,7 @@
 {
   "name": "SCAR 17S-muzzle",
   "type": "muzzle",
-  "image": "assets\\images\\SCAR 17S-muzzle.png",
+  "image": "assets\\images\\SCAR 17S\\muzzle.png",
   "scale": 1,
   "attachments": []
 }

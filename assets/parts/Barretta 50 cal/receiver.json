@@ -1,7 +1,7 @@
 {
   "name": "Berretta 50 cal-reveiver",
   "type": "receiver",
-  "image": "assets\\images\\Berretta 50 cal-reveiver.png",
+  "image": "assets\\images\\Berretta 50 cal\\reveiver.png",
   "scale": 1,
   "attachments": []
 }

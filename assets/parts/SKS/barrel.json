@@ -1,7 +1,7 @@
 {
   "name": "barrel",
   "type": "barrel",
-  "image": "assets\\images\\SKS-barrel.png",
+  "image": "assets\\images\\SKS\\barrel.png",
   "scale": 1,
   "attachments": []
 }
