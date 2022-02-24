@@ -2,6 +2,13 @@
   "name": "BAR Safari Anniversary-sight",
   "type": "sight",
   "image": "assets\\images\\BAR Safari Anniversary-sight.png",
-  "scale": 1,
-  "attachments": []
+  "scale": 0.4,
+  "attachments": [
+    {
+      "x": 0.05,
+      "y": 1,
+      "type": "sight",
+      "parent": false
+    }
+  ]
 }
