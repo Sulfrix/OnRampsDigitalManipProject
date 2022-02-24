@@ -19,6 +19,17 @@
 
 <body>
     <div id="app">
+        <div class="overlay hidden" id="dialogOverlay">
+            <div class="dialogBox hidden" id="loadDialog">
+                <h2>Load</h2>
+                <div id="partLoadList"></div>
+                <input placeholder="Enter a URL..." id="fileURL">
+                <div class="buttons">
+                    <button onclick="closeDialog()">Cancel</button>
+                    <button onclick="loadButton()">Load</button>
+                </div>
+            </div>
+        </div>
         <div class="bottombar"> <!-- it says bottom bar but it works as a top bar too -->
             <div class="buttontoggle-container" id="tool-picker">
                 <button class="active">Test Button</button>

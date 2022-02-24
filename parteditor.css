@@ -90,6 +90,9 @@ button {
     border: none;
     height: 20px;
     cursor: pointer;
+}
+
+.bottombar button {
     margin: 0px 2px;
 }
 
@@ -187,4 +190,46 @@ button:active {
 h2 {
     text-align: center;
     margin: 10px 0px;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.302);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.dialogBox {
+    background: rgb(70, 70, 70);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#loadDialog {
+    width: 75vw;
+    min-width: 500px;
+    
+}
+
+#loadDialog input {
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: 2px solid gray;
+    margin: 5px 0px;
+    padding: 5px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
 }
