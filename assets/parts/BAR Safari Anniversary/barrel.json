@@ -2,6 +2,13 @@
   "name": "BAR Safari Anniversary-barrel",
   "type": "barrel",
   "image": "assets\\images\\BAR Safari Anniversary-barrel.png",
-  "scale": 1,
-  "attachments": []
+  "scale": 0.4,
+  "attachments": [
+    {
+      "x": 1,
+      "y": -0.5,
+      "type": "barrel",
+      "parent": false
+    }
+  ]
 }
