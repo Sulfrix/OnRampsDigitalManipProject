@@ -9,12 +9,18 @@ let defaultPart = {
     attachments: []
 }
 
+let categories = {};
+
 /**
  * @type {EditorWorkspace}
  */
 let workspace;
 
 let canvas;
+
+function preload() {
+    categories = loadJSON("categories.json");
+}
 
 function setup() {
     // put setup code here
@@ -50,15 +56,44 @@ function newPart() {
     updatePartsList();
 }
 
+let currentDialog = null;
+
+function openDialog(which) {
+    if (currentDialog) {
+        closeDialog();
+    }
+    document.getElementById("dialogOverlay").classList.remove("hidden");
+    document.getElementById(which).classList.remove("hidden");
+    currentDialog = which;
+}
+
+function closeDialog() {
+    if (currentDialog) {
+        document.getElementById("dialogOverlay").classList.add("hidden");
+        document.getElementById(currentDialog).classList.remove("hidden");
+        currentDialog = null;
+    }
+}
+
 function loadPart() {
-    let path = prompt("Enter the URL path to a part JSON file.");
-    pathLoad(path)
+    openDialog("loadDialog");
+}
+
+function loadButton() {
+    let input = document.getElementById("fileURL");
+    for (let cat in categories) {
+        let catList = categories[cat];
+        createCategoryElement(cat, catList);
+    }
+    pathLoad(input.value)
 }
 
 function pathLoad(path) {
     loadJSON(path, {}, "json", (data) => {
         workspace.parts.push(new EditorPart(0, 0, new Part(data)));
         updatePartsList();
+        document.getElementById("fileURL").value = "";
+        closeDialog();
     });
 }
 
