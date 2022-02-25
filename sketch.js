@@ -1,15 +1,23 @@
 /// <reference path="types/global.d.ts"/>
 
+let workspace;
+
+let canvas;
+
 function setup() {
   // put setup code here
-  createCanvas(400, 300);
+  canvas = createCanvas(windowWidth, windowHeight);
+  workspace = new Workspace();
+  pInput.registerCanvas(canvas);
+  pInput.registerWorkspace(workspace);
 }
 
 function draw() {
-  // put drawing code here
-  background(51);
-  circle(mouseX, mouseY, 10);
-  text("Hello World!", 0, 10);
-  rect(10, 10, 10, 10);
-  // i hate yoy
+  background(220);
+  workspace.update();
+  workspace.draw();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
