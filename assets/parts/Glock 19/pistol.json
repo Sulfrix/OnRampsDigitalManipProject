@@ -2,6 +2,25 @@
   "name": "Glock 19",
   "type": "receiver",
   "image": "assets\\images\\Singleton\\Glock 19.png",
-  "scale": 1,
-  "attachments": []
+  "scale": 0.8,
+  "attachments": [
+    {
+      "x": -0.93,
+      "y": -0.67,
+      "type": "muzzle",
+      "parent": true
+    },
+    {
+      "x": 0.83,
+      "y": -0.65,
+      "type": "stock",
+      "parent": true
+    },
+    {
+      "x": 0.5,
+      "y": -0.8,
+      "type": "sight",
+      "parent": true
+    }
+  ]
 }

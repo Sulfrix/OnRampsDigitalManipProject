@@ -3,5 +3,24 @@
   "type": "receiver",
   "image": "assets\\images\\Berretta 50 cal\\reveiver.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.86,
+      "type": "barrel",
+      "parent": true
+    },
+    {
+      "x": 0.2,
+      "y": -0.86,
+      "type": "sight",
+      "parent": true
+    },
+    {
+      "x": 0.7,
+      "y": -0.5,
+      "type": "stock",
+      "parent": true
+    }
+  ]
 }
