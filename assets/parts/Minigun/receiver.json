@@ -1,0 +1,7 @@
+{
+  "name": "receiver",
+  "type": "receiver",
+  "image": "assets\\images\\Minigun\\receiver.png",
+  "scale": 1,
+  "attachments": []
+}
