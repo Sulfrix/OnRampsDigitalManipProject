@@ -3,5 +3,12 @@
   "type": "stock",
   "image": "assets\\images\\Berretta 50 cal\\stock.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.75,
+      "type": "stock",
+      "parent": true
+    }
+  ]
 }

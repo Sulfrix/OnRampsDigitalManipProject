@@ -3,5 +3,12 @@
   "type": "sight",
   "image": "assets\\images\\Berretta 50 cal\\sight.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": 0.4,
+      "y": 1,
+      "type": "sight",
+      "parent": false
+    }
+  ]
 }

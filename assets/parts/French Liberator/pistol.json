@@ -2,6 +2,25 @@
   "name": "French Liberator",
   "type": "receiver",
   "image": "assets\\images\\Singleton\\French Liberator.png",
-  "scale": 1,
-  "attachments": []
+  "scale": 0.7,
+  "attachments": [
+    {
+      "x": -0.96,
+      "y": -0.68,
+      "type": "muzzle",
+      "parent": true
+    },
+    {
+      "x": 0.96,
+      "y": -0.64,
+      "type": "stock",
+      "parent": true
+    },
+    {
+      "x": 0.24,
+      "y": -0.8,
+      "type": "sight",
+      "parent": true
+    }
+  ]
 }

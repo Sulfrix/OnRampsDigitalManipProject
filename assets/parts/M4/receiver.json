@@ -6,19 +6,15 @@
   "attachments": [
     {
       "x": -0.9,
-      "y": -0.7,
-      "type": "reciever",
-      "parent": true,
-      "rotation": 0,
-      "scale": 1
+      "y": -0.97,
+      "type": "barrel",
+      "parent": true
     },
     {
       "x": 0.96,
       "y": -0.72,
-      "type": "reciever",
-      "parent": true,
-      "rotation": 0,
-      "scale": 1
+      "type": "stock",
+      "parent": true
     }
   ]
 }
