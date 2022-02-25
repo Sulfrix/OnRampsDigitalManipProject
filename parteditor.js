@@ -59,7 +59,7 @@ function newPart() {
     newPart.image = image;
     let instPart = new Part(newPart);
     let workPart = new EditorPart(0, 0, instPart);
-    workspace.parts.push(workPart);
+    workspace.addPart(workPart);
     updatePartsList();
 }
 
@@ -155,7 +155,7 @@ function createCategoryElement(cat, catList) {
 
 function pathLoad(path) {
     loadJSON(path, {}, "json", (data) => {
-        workspace.parts.push(new EditorPart(0, 0, new Part(data)));
+        workspace.addPart(new EditorPart(0, 0, new Part(data)));
         updatePartsList();
         document.getElementById("fileURL").value = "";
         closeDialog();
