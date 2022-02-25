@@ -4,10 +4,16 @@ let workspace;
 
 let canvas;
 
+let categories;
+
+function preload() {
+  categories = loadJSON("categories.json");
+}
+
 function setup() {
   // put setup code here
   canvas = createCanvas(windowWidth, windowHeight);
-  workspace = new Workspace();
+  workspace = new FrontEndWorkspace();
   pInput.registerCanvas(canvas);
   pInput.registerWorkspace(workspace);
 }
@@ -20,4 +26,5 @@ function draw() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  workspace.cacheMouseArea = null;
 }
