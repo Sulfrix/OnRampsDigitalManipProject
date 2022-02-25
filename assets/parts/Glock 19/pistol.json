@@ -1,7 +1,7 @@
 {
   "name": "Glock 19",
   "type": "receiver",
-  "image": "assets\\images\\Glock 19.png",
+  "image": "assets\\images\\Singleton\\Glock 19.png",
   "scale": 1,
   "attachments": []
 }
