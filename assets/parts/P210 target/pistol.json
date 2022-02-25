@@ -1,7 +1,7 @@
 {
   "name": "P210 target",
   "type": "receiver",
-  "image": "assets\\images\\Singleton\\P210 target .png",
+  "image": "assets\\images\\Singleton\\P210 Target.png",
   "scale": 1,
   "attachments": []
 }
