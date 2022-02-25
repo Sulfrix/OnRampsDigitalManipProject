@@ -28,6 +28,10 @@ function setup() {
     workspace = new EditorWorkspace();
     pInput.registerCanvas(canvas);
     pInput.registerWorkspace(workspace);
+    workspace.addTool(new EditorCursorTool());
+    workspace.addTool(new Tool());
+    workspace.selectTool(workspace.tools[0]);
+    refreshTools();
 }
 
 function draw() {
@@ -57,6 +61,23 @@ function newPart() {
     let workPart = new EditorPart(0, 0, instPart);
     workspace.parts.push(workPart);
     updatePartsList();
+}
+
+function refreshTools() {
+    let toolPicker = document.getElementById("tool-picker");
+    toolPicker.innerHTML = "";
+    for (let tool of workspace.tools) {
+        let button = document.createElement("button");
+        button.innerHTML = tool.name;
+        if (tool == workspace.selectedTool) {
+            button.classList.add("active");
+        }
+        button.addEventListener("click", () => {
+            workspace.selectTool(tool);
+            refreshTools();
+        })
+        toolPicker.appendChild(button);
+    }
 }
 
 let currentDialog = null;

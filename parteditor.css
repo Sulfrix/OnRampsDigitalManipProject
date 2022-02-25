@@ -46,7 +46,7 @@ main {
 }
 
 .buttontoggle-container button {
-    margin: 0;
+    margin: 0 !important;
     border: 1px solid rgba(255, 255, 255, 0.24);
     background: transparent;
     color: white;
@@ -61,7 +61,6 @@ main {
 }
 
 .buttontoggle-container button.active {
-    margin: 0;
     border: 1px solid transparent;
     background: rgb(255, 165, 0);
     color: black;
@@ -83,6 +82,11 @@ main {
 .buttontoggle-container button:last-child {
     border-radius: 0px 10px 10px 0px;
     padding-right: 8px;
+}
+
+.buttontoggle-container button:only-child {
+    border-radius: 10px;
+    padding: 0px 8px;
 }
 
 button {
