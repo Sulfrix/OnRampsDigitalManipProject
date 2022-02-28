@@ -29,7 +29,7 @@ function setup() {
     pInput.registerCanvas(canvas);
     pInput.registerWorkspace(workspace);
     workspace.addTool(new EditorCursorTool());
-    workspace.addTool(new Tool());
+    workspace.addTool(new HandTool());
     workspace.selectTool(workspace.tools[0]);
     refreshTools();
 }
