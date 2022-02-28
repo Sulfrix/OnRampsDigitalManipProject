@@ -29,7 +29,8 @@ function setup() {
     pInput.registerCanvas(canvas);
     pInput.registerWorkspace(workspace);
     workspace.addTool(new EditorCursorTool());
-    workspace.addTool(new Tool());
+    workspace.addTool(new AttachmentPointTool());
+    workspace.addTool(new HandTool());
     workspace.selectTool(workspace.tools[0]);
     refreshTools();
 }
@@ -186,7 +187,7 @@ function createPartListItem(part, editpart) {
     let exportButton = document.createElement("button");
     exportButton.innerHTML = "Export";
     exportButton.addEventListener("click", () => {
-        save(part.serialize(), part.name + ".json");
+        save(editpart.serialize(), part.name + ".json");
     })
     let expandButton = document.createElement("button");
     expandLogic(part, expand, expandButton);
