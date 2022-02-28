@@ -54,9 +54,11 @@ function newPart() {
     let name = document.getElementById("partName").value;
     let type = document.getElementById("partType").value;
     let image = document.getElementById("partImage").value;
+    let newPart = Object.assign({}, defaultPart);
     newPart.name = name;
     newPart.type = type;
     newPart.image = image;
+    newPart.scale = 1;
     let instPart = new Part(newPart);
     let workPart = new EditorPart(0, 0, instPart);
     workspace.addPart(workPart);
