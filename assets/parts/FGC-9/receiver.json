@@ -1,0 +1,7 @@
+{
+  "name": "receiver",
+  "type": "receiver",
+  "image": "assets\\images\\FGC-9\\receiver.png",
+  "scale": 1,
+  "attachments": []
+}
