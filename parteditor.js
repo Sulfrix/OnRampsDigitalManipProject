@@ -212,7 +212,7 @@ function createPartListItem(part, editpart) {
     let deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Delete";
     deleteButton.addEventListener("click", () => {
-        workspace.parts.splice(workspace.parts.indexOf(editpart), 1);
+        workspace.deletePart(editpart);
         updatePartsList();
     })
     baseLine.appendChild(name);
