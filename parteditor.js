@@ -187,7 +187,7 @@ function createPartListItem(part, editpart) {
     let exportButton = document.createElement("button");
     exportButton.innerHTML = "Export";
     exportButton.addEventListener("click", () => {
-        save(part.serialize(), part.name + ".json");
+        save(editpart.serialize(), part.name + ".json");
     })
     let expandButton = document.createElement("button");
     expandLogic(part, expand, expandButton);
