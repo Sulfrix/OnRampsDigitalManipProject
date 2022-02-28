@@ -31,7 +31,6 @@ function setup() {
     workspace.addTool(new EditorCursorTool());
     workspace.addTool(new AttachmentPointTool());
     workspace.addTool(new HandTool());
-    workspace.addTool(new Tool());
     workspace.selectTool(workspace.tools[0]);
     refreshTools();
 }
