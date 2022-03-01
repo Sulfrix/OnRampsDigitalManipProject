@@ -23,8 +23,8 @@ jobs:
       
       - name: Generates the categories file
         run: node CategoryGen.js
-      - name: switching from HTTPS to SSH
-        run: git remote set-url origin ${{ secrets.ssh }}
+      #- name: switching from HTTPS to SSH
+      #  run: git remote set-url origin ${{ secrets.ssh }}
       - name: check for changes
         run: git status
       - name: stage changed files
