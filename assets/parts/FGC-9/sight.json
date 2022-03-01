@@ -3,5 +3,15 @@
   "type": "sight",
   "image": "assets\\images\\FGC-9\\sight.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": 0.39774684006940086,
+      "y": 0.9719239485158406,
+      "type": "sight",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }

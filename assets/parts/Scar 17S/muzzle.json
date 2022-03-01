@@ -3,5 +3,15 @@
   "type": "muzzle",
   "image": "assets\\images\\SCAR 17S\\muzzle.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": 1,
+      "y": 0.03384567098756475,
+      "type": "muzzle",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }

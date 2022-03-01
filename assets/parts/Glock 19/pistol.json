@@ -8,19 +8,37 @@
       "x": -0.93,
       "y": -0.67,
       "type": "muzzle",
-      "parent": true
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
     },
     {
       "x": 0.83,
       "y": -0.65,
       "type": "stock",
-      "parent": true
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
     },
     {
       "x": 0.5,
       "y": -0.8,
       "type": "sight",
-      "parent": true
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    },
+    {
+      "x": -0.7036528570191628,
+      "y": -0.32588523823819526,
+      "type": "attachment",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
     }
   ]
 }
