@@ -3,5 +3,15 @@
   "type": "stock",
   "image": "assets\\images\\Maxus II Ultimate\\stock.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.4748125142034696,
+      "type": "stock",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }
