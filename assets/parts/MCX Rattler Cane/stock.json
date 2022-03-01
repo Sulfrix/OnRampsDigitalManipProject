@@ -3,5 +3,12 @@
   "type": "stock",
   "image": "assets\\images\\MCX Rattler Cane\\stock.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.6194160424538816,
+      "type": "stock",
+      "parent": false
+    }
+  ]
 }

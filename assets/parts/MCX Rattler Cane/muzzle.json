@@ -3,5 +3,12 @@
   "type": "muzzle",
   "image": "assets\\images\\MCX Rattler Cane\\muzzle.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": 1,
+      "y": -0.025806696853936772,
+      "type": "muzzle",
+      "parent": false
+    }
+  ]
 }

@@ -2,6 +2,13 @@
   "name": "stock",
   "type": "stock",
   "image": "assets\\images\\BAR ShortTrac Hog Stalker Realtree Max\\stock.png",
-  "scale": 1,
-  "attachments": []
+  "scale": 0.3,
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.5942529673514255,
+      "type": "stock",
+      "parent": false
+    }
+  ]
 }
