@@ -3,5 +3,15 @@
   "type": "stock",
   "image": "assets\\images\\MP5\\stock.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.45682705159048376,
+      "type": "stock",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }

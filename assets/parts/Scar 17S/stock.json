@@ -3,5 +3,15 @@
   "type": "stock",
   "image": "assets\\images\\SCAR 17S\\stock.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.4835183387498416,
+      "type": "stock",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }

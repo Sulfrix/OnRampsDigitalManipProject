@@ -3,5 +3,15 @@
   "type": "stock",
   "image": "assets\\images\\SKS\\stock.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.3207248416608022,
+      "type": "stock",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }
