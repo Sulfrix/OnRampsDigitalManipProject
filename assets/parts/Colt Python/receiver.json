@@ -1,6 +1,6 @@
 {
   "name": "receiver",
-  "type": "receiver",
+  "type": "pistol",
   "image": "assets\\images\\Singleton\\Colt Python.png",
   "scale": 1,
   "attachments": []
