@@ -3,5 +3,24 @@
   "type": "barrel",
   "image": "assets\\images\\Minigun\\barrel.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": 1,
+      "y": -1,
+      "type": "receiver",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    },
+    {
+      "x": 0.16821662843025798,
+      "y": 0.9881689501801114,
+      "type": "attachment",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }

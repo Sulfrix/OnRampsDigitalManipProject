@@ -3,5 +3,33 @@
   "type": "barrel",
   "image": "assets\\images\\SKS\\barrel.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": 0.17344775542352253,
+      "type": "muzzle",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    },
+    {
+      "x": 1,
+      "y": -0.5096698077021616,
+      "type": "barrel",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    },
+    {
+      "x": -0.5350081294744384,
+      "y": 0.7248329818354406,
+      "type": "attachment",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }
