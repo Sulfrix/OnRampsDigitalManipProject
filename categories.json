@@ -49,6 +49,7 @@
   "muzzle": [
     "assets/parts/Barretta 50 cal/muzzle.json",
     "assets/parts/MCX Rattler Cane/muzzle.json",
+    "assets/parts/SKS/muzzle.json",
     "assets/parts/Scar 17S/muzzle.json"
   ],
   "pistol": [
