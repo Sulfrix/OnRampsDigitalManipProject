@@ -8,8 +8,6 @@ let categories;
 
 function preload() {
   categories = loadJSON("categories.json");
-  workspace.addTool(new HandTool());
-  workspace.selectTool(workspace.tools[0]);
 }
 
 function setup() {
@@ -18,6 +16,8 @@ function setup() {
   workspace = new FrontEndWorkspace();
   pInput.registerCanvas(canvas);
   pInput.registerWorkspace(workspace);
+  workspace.addTool(new HandTool());
+  workspace.selectTool(workspace.tools[0]);
 }
 
 function draw() {
