@@ -3,5 +3,24 @@
   "type": "receiver",
   "image": "assets\\images\\MP5\\receiver.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -0.6879518072289157,
+      "y": -0.8263565891472868,
+      "type": "barrel",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    },
+    {
+      "x": 0.850181251067966,
+      "y": -0.549195038635286,
+      "type": "stock",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 25
+    }
+  ]
 }
