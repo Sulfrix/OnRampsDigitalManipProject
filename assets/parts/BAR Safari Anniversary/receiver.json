@@ -1,5 +1,6 @@
 {
-  "name": "BAR Safari Anniversary-receiver",
+  "name": "Receiver",
+  "basegun": "BAR Safari Anniversary",
   "type": "receiver",
   "image": "assets\\images\\BAR Safari Anniversary\\receiver.png",
   "scale": 0.4,

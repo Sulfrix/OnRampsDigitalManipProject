@@ -1,5 +1,6 @@
 {
-  "name": "Berretta 50 cal-stock",
+  "name": "Stock",
+  "basegun": "Barretta 50 cal",
   "type": "stock",
   "image": "assets\\images\\Berretta 50 cal\\stock.png",
   "scale": 1,

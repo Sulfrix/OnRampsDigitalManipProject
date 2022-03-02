@@ -1,5 +1,6 @@
 {
   "name": "stock",
+  "basegun": "FGC-9",
   "type": "stock",
   "image": "assets\\images\\FGC-9\\stock.png",
   "scale": 1,

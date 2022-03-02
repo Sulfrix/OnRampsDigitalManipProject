@@ -1,5 +1,6 @@
 {
   "name": "sight",
+  "basegun": "FGC-9",
   "type": "sight",
   "image": "assets\\images\\FGC-9\\sight.png",
   "scale": 1,

@@ -1,5 +1,6 @@
 {
   "name": "receiver",
+  "basegun": "BAR ShortTrac Hog Stalker Realtree Max",
   "type": "receiver",
   "image": "assets\\images\\BAR ShortTrac Hog Stalker Realtree Max\\receiver.png",
   "scale": 0.3,

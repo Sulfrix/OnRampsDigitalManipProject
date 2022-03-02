@@ -1,5 +1,6 @@
 {
-  "name": "BAR Safari Anniversary-barrel",
+  "name": "Barrel",
+  "basegun": "BAR Safari Anniversary",
   "type": "barrel",
   "image": "assets\\images\\BAR Safari Anniversary\\barrel.png",
   "scale": 0.4,

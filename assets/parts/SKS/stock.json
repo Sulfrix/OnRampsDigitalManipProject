@@ -1,5 +1,6 @@
 {
   "name": "stock",
+  "basegun": "SKS",
   "type": "stock",
   "image": "assets\\images\\SKS\\stock.png",
   "scale": 1,

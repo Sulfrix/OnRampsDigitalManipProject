@@ -1,5 +1,6 @@
 {
-  "name": "Maxus II Ultimate-stock",
+  "name": "Stock",
+  "basegun": "Maxus II Ultimate",
   "type": "stock",
   "image": "assets\\images\\Maxus II Ultimate\\stock.png",
   "scale": 1,

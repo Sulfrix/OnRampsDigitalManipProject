@@ -1,5 +1,6 @@
 {
-  "name": "SCAR 17S-muzzle",
+  "name": "Muzzle",
+  "basegun": "SCAR 17S",
   "type": "muzzle",
   "image": "assets\\images\\SCAR 17S\\muzzle.png",
   "scale": 1,

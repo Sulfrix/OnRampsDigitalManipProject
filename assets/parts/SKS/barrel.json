@@ -1,5 +1,6 @@
 {
   "name": "barrel",
+  "basegun": "SKS",
   "type": "barrel",
   "image": "assets\\images\\SKS\\barrel.png",
   "scale": 1,

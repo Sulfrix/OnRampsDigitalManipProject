@@ -1,5 +1,6 @@
 {
-  "name": "AK-47-barrel",
+  "name": "Barrel",
+  "basegun": "AK-47",
   "type": "barrel",
   "image": "assets\\images\\AK-47\\barrel.png",
   "scale": 1,

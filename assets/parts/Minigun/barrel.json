@@ -1,5 +1,6 @@
 {
   "name": "barrel",
+  "basegun": "Minigun",
   "type": "barrel",
   "image": "assets\\images\\Minigun\\barrel.png",
   "scale": 1,

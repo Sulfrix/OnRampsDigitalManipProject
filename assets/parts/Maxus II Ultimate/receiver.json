@@ -1,5 +1,6 @@
 {
-  "name": "Maxus II Ultimate-receiver",
+  "name": "Receiver",
+  "basegun": "Maxus II Ultimate",
   "type": "receiver",
   "image": "assets\\images\\Maxus II Ultimate\\receiver.png",
   "scale": 1,

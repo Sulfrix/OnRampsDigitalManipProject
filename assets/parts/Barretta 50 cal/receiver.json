@@ -1,5 +1,6 @@
 {
-  "name": "Berretta 50 cal-reveiver",
+  "name": "Reveiver",
+  "basegun": "Barretta 50 cal",
   "type": "receiver",
   "image": "assets\\images\\Berretta 50 cal\\receiver.png",
   "scale": 1,

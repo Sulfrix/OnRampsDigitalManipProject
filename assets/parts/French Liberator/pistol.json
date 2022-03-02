@@ -1,5 +1,6 @@
 {
-  "name": "French Liberator",
+  "name": "pistol",
+  "basegun": "French Liberator",
   "type": "receiver",
   "image": "assets\\images\\Singleton\\French Liberator.png",
   "scale": 0.7,

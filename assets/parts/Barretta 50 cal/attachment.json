@@ -1,5 +1,6 @@
 {
-  "name": "Berretta 50 cal-attachment",
+  "name": "Bipod",
+  "basegun": "Barretta 50 cal",
   "type": "attachment",
   "image": "assets\\images\\Berretta 50 cal\\attachment.png",
   "scale": 1,

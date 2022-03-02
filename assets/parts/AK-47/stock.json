@@ -1,5 +1,6 @@
 {
-  "name": "AK-47-stock",
+  "name": "Stock",
+  "basegun": "AK-47",
   "type": "stock",
   "image": "assets\\images\\AK-47\\stock.png",
   "scale": 1,

@@ -1,5 +1,6 @@
 {
-  "name": "BAR Safari Anniversary-stock",
+  "name": "Stock",
+  "basegun": "BAR Safari Anniversary",
   "type": "stock",
   "image": "assets\\images\\BAR Safari Anniversary\\stock.png",
   "scale": 0.4,

@@ -1,5 +1,6 @@
 {
-  "name": "SCAR 17S-barrel",
+  "name": "Barrel",
+  "basegun": "SCAR 17S",
   "type": "barrel",
   "image": "assets\\images\\SCAR 17S\\barrel.png",
   "scale": 1,

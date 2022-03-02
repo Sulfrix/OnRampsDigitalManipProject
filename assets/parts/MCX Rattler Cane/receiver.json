@@ -1,5 +1,6 @@
 {
   "name": "receiver",
+  "basegun": "MCX Rattler Cane",
   "type": "receiver",
   "image": "assets\\images\\MCX Rattler Cane\\receiver.png",
   "scale": 1,

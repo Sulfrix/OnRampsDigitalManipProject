@@ -1,5 +1,6 @@
 {
-  "name": "Maxus II Ultimate-barrel",
+  "name": "Barrel",
+  "basegun": "Maxus II Ultimate",
   "type": "barrel",
   "image": "assets\\images\\Maxus II Ultimate\\barrel.png",
   "scale": 0.6,

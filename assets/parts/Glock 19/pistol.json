@@ -1,5 +1,6 @@
 {
-  "name": "Glock 19",
+  "name": "pistol",
+  "basegun": "Glock-19",
   "type": "receiver",
   "image": "assets\\images\\Singleton\\Glock 19.png",
   "scale": 0.8,

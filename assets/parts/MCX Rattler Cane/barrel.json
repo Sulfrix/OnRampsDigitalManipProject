@@ -1,5 +1,6 @@
 {
   "name": "barrel",
+  "basegun": "MCX Rattler Cane",
   "type": "barrel",
   "image": "assets\\images\\MCX Rattler Cane\\barrel.png",
   "scale": 1,

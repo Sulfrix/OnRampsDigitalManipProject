@@ -1,5 +1,6 @@
 {
   "name": "barrel",
+  "basegun": "MP5",
   "type": "barrel",
   "image": "assets\\images\\MP5\\barrel.png",
   "scale": 1,

@@ -1,5 +1,6 @@
 {
-  "name": "BAR Safari Anniversary-sight",
+  "name": "Sight",
+  "basegun": "BAR Safari Anniversary",
   "type": "sight",
   "image": "assets\\images\\BAR Safari Anniversary\\sight.png",
   "scale": 0.4,

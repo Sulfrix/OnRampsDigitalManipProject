@@ -1,5 +1,6 @@
 {
   "name": "receiver",
+  "basegun": "SKS",
   "type": "receiver",
   "image": "assets\\images\\SKS\\receiver.png",
   "scale": 1,

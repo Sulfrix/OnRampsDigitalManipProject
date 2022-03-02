@@ -1,5 +1,6 @@
 {
-  "name": "AK-47-reciver",
+  "name": "Reciver",
+  "basegun": "AK-47",
   "type": "reciver",
   "image": "assets\\images\\AK-47\\receiver.png",
   "scale": 1,

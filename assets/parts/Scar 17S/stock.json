@@ -1,5 +1,6 @@
 {
-  "name": "SCAR 17S-stock",
+  "name": "Stock",
+  "basegun": "SCAR 17S",
   "type": "stock",
   "image": "assets\\images\\SCAR 17S\\stock.png",
   "scale": 1,

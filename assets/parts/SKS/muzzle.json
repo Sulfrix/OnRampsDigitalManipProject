@@ -1,5 +1,6 @@
 {
   "name": "muzzle",
+  "basegun": "SKS",
   "type": "muzzle",
   "image": "assets\\images\\Singleton\\muzzle UwU.png",
   "scale": 0.1,

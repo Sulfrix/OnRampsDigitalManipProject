@@ -1,5 +1,6 @@
 {
   "name": "receiver",
+  "basegun": "Minigun",
   "type": "receiver",
   "image": "assets\\images\\Minigun\\receiver.png",
   "scale": 1,

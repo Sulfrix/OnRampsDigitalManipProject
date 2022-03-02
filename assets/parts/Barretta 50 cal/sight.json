@@ -1,5 +1,6 @@
 {
-  "name": "Berretta 50 cal-sight",
+  "name": "Sight",
+  "basegun": "Barretta 50 cal",
   "type": "sight",
   "image": "assets\\images\\Berretta 50 cal\\sight.png",
   "scale": 1,
