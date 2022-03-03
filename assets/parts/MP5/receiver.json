@@ -1,5 +1,5 @@
 {
-  "name": "receiver",
+  "name": "Receiver",
   "basegun": "MP5",
   "type": "receiver",
   "image": "assets\\images\\MP5\\receiver.png",
