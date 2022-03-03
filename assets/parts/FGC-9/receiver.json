@@ -1,5 +1,5 @@
 {
-  "name": "receiver",
+  "name": "Receiver",
   "basegun": "FGC-9",
   "type": "receiver",
   "image": "assets\\images\\FGC-9\\receiver.png",

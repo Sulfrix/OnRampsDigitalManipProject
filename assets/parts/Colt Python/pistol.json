@@ -1,5 +1,5 @@
 {
-  "name": "pistol",
+  "name": "Pistol",
   "basegun": "Colt Python",
   "type": "pistol",
   "image": "assets\\images\\Singleton\\Colt Python.png",
