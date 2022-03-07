@@ -4,5 +4,25 @@
   "type": "barrel",
   "image": "assets\\images\\SCAR 17S\\barrel.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": 1,
+      "y": -0.19486166007905137,
+      "type": "barrel",
+      "parent": false,
+      "rotation": 0
+    },
+    {
+      "x": 0.41772543246227456,
+      "y": 0.9454337424589152,
+      "type": "attachment",
+      "parent": true
+    },
+    {
+      "x": -1,
+      "y": 0.5335344289577706,
+      "type": "muzzle",
+      "parent": true
+    }
+  ]
 }
