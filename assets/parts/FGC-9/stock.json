@@ -4,5 +4,12 @@
   "type": "stock",
   "image": "assets\\images\\FGC-9\\stock.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -1,
+      "y": -0.4438554533440391,
+      "type": "stock",
+      "parent": false
+    }
+  ]
 }

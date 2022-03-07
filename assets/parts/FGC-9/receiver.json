@@ -4,5 +4,24 @@
   "type": "receiver",
   "image": "assets\\images\\FGC-9\\receiver.png",
   "scale": 1,
-  "attachments": []
+  "attachments": [
+    {
+      "x": -0.9913978494623656,
+      "y": -0.5588720222866562,
+      "type": "barrel",
+      "parent": true
+    },
+    {
+      "x": 0.9615041051478355,
+      "y": -0.7120268752283606,
+      "type": "stock",
+      "parent": true
+    },
+    {
+      "x": 0.7110530481234361,
+      "y": -0.9558875610161943,
+      "type": "sight",
+      "parent": true
+    }
+  ]
 }
