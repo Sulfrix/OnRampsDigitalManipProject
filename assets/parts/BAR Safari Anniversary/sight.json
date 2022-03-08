@@ -3,7 +3,7 @@
   "basegun": "BAR Safari Anniversary",
   "type": "sight",
   "image": "assets\\images\\BAR Safari Anniversary\\sight.png",
-  "scale": 0.4,
+  "scale": 0.36,
   "attachments": [
     {
       "x": 0.45,

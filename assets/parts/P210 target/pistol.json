@@ -3,7 +3,7 @@
   "basegun": "P210 target",
   "type": "pistol",
   "image": "assets\\images\\Singleton\\P210 Target.png",
-  "scale": 1,
+  "scale": 0.83,
   "attachments": [
     {
       "x": -0.9931292610689807,

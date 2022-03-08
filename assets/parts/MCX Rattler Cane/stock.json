@@ -3,7 +3,7 @@
   "basegun": "MCX Rattler Cane",
   "type": "stock",
   "image": "assets\\images\\MCX Rattler Cane\\stock.png",
-  "scale": 1,
+  "scale": 0.97,
   "attachments": [
     {
       "x": -1,
