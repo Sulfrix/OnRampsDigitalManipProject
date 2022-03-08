@@ -1,0 +1,8 @@
+{
+  "name": "Kitchen Bayonet",
+  "basegun": "Kitchen Bayonet",
+  "type": "attachment",
+  "image": "assets\\images\\Single attachments\\Kitchen Bayonet.png",
+  "scale": 1,
+  "attachments": []
+}
