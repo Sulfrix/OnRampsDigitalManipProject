@@ -1,0 +1,8 @@
+{
+  "name": "Flashlight",
+  "basegun": "Flashlight",
+  "type": "attachment",
+  "image": "assets\\images\\Single attachments\\Flashlight.png",
+  "scale": 1,
+  "attachments": []
+}

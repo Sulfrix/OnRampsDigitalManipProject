@@ -1,0 +1,8 @@
+{
+  "name": "Lazer Sight",
+  "basegun": "Lazer Sight",
+  "type": "attachment",
+  "image": "assets\\images\\Single attachments\\Lazer Sight.png",
+  "scale": 1,
+  "attachments": []
+}

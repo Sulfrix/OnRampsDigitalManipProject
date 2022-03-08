@@ -1,0 +1,8 @@
+{
+  "name": "Foregrip",
+  "basegun": "Foregrip",
+  "type": "attachment",
+  "image": "assets\\images\\Single attachments\\Foregrip.png",
+  "scale": 1,
+  "attachments": []
+}
