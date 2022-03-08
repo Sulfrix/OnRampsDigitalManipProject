@@ -3,7 +3,7 @@
   "basegun": "Barretta 50 cal",
   "type": "muzzle",
   "image": "assets\\images\\Berretta 50 cal\\muzzle.png",
-  "scale": 1,
+  "scale": 1.2,
   "attachments": [
     {
       "x": 1,

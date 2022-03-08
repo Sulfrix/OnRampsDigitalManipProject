@@ -3,7 +3,7 @@
   "basegun": "BAR Safari Anniversary",
   "type": "receiver",
   "image": "assets\\images\\BAR Safari Anniversary\\receiver.png",
-  "scale": 0.4,
+  "scale": 0.36,
   "attachments": [
     {
       "x": -1,

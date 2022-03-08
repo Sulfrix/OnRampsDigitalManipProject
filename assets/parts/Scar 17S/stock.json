@@ -3,7 +3,7 @@
   "basegun": "SCAR 17S",
   "type": "stock",
   "image": "assets\\images\\SCAR 17S\\stock.png",
-  "scale": 1,
+  "scale": 0.84,
   "attachments": [
     {
       "x": -1,

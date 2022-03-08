@@ -1,0 +1,8 @@
+{
+  "name": "Bayonet",
+  "basegun": "Bayonet",
+  "type": "attachment",
+  "image": "assets\\images\\Single attachments\\Bayonet.png",
+  "scale": 1,
+  "attachments": []
+}

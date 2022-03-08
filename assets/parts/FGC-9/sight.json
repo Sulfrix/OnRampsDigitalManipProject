@@ -3,7 +3,7 @@
   "basegun": "FGC-9",
   "type": "sight",
   "image": "assets\\images\\FGC-9\\sight.png",
-  "scale": 1,
+  "scale": 0.9,
   "attachments": [
     {
       "x": 0.39774684006940086,

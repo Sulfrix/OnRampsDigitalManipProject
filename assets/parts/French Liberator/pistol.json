@@ -3,7 +3,7 @@
   "basegun": "French Liberator",
   "type": "pistol",
   "image": "assets\\images\\Singleton\\French Liberator.png",
-  "scale": 0.7,
+  "scale": 0.51,
   "attachments": [
     {
       "x": -0.96,
