@@ -1,60 +1,59 @@
 {
   "barrel": [
-    "assets\\parts\\AK-47\\barrel.json",
-    "assets\\parts\\BAR Safari Anniversary\\barrel.json",
-    "assets\\parts\\BAR ShortTrac Hog Stalker Realtree Max\\barrel.json",
-    "assets\\parts\\Barretta 50 cal\\barrel.json",
-    "assets\\parts\\FGC-9\\barrel.json",
-    "assets\\parts\\Maxus II Ultimate\\barrel.json",
-    "assets\\parts\\MCX Rattler Cane\\barrel.json",
-    "assets\\parts\\Minigun\\barrel.json",
-    "assets\\parts\\MP5\\barrel.json",
-    "assets\\parts\\Scar 17S\\barrel.json",
-    "assets\\parts\\SKS\\barrel.json"
+    "assets/parts/AK-47/barrel.json",
+    "assets/parts/BAR Safari Anniversary/barrel.json",
+    "assets/parts/BAR ShortTrac Hog Stalker Realtree Max/barrel.json",
+    "assets/parts/Barretta 50 cal/barrel.json",
+    "assets/parts/FGC-9/barrel.json",
+    "assets/parts/MCX Rattler Cane/barrel.json",
+    "assets/parts/MP5/barrel.json",
+    "assets/parts/Maxus II Ultimate/barrel.json",
+    "assets/parts/Minigun/barrel.json",
+    "assets/parts/SKS/barrel.json",
+    "assets/parts/Scar 17S/barrel.json"
   ],
   "receiver": [
-    "assets\\parts\\AK-47\\receiver.json",
-    "assets\\parts\\BAR Safari Anniversary\\receiver.json",
-    "assets\\parts\\BAR ShortTrac Hog Stalker Realtree Max\\receiver.json",
-    "assets\\parts\\Barretta 50 cal\\receiver.json",
-    "assets\\parts\\FGC-9\\receiver.json",
-    "assets\\parts\\Maxus II Ultimate\\receiver.json",
-    "assets\\parts\\MCX Rattler Cane\\receiver.json",
-    "assets\\parts\\Minigun\\receiver.json",
-    "assets\\parts\\MP5\\receiver.json",
-    "assets\\parts\\Scar 17S\\receiver.json",
-    "assets\\parts\\SKS\\receiver.json"
+    "assets/parts/AK-47/receiver.json",
+    "assets/parts/BAR Safari Anniversary/receiver.json",
+    "assets/parts/BAR ShortTrac Hog Stalker Realtree Max/receiver.json",
+    "assets/parts/Barretta 50 cal/receiver.json",
+    "assets/parts/FGC-9/receiver.json",
+    "assets/parts/MCX Rattler Cane/receiver.json",
+    "assets/parts/MP5/receiver.json",
+    "assets/parts/Maxus II Ultimate/receiver.json",
+    "assets/parts/Minigun/receiver.json",
+    "assets/parts/SKS/receiver.json",
+    "assets/parts/Scar 17S/receiver.json"
   ],
   "stock": [
-    "assets\\parts\\AK-47\\stock.json",
-    "assets\\parts\\BAR Safari Anniversary\\stock.json",
-    "assets\\parts\\BAR ShortTrac Hog Stalker Realtree Max\\stock.json",
-    "assets\\parts\\Barretta 50 cal\\stock.json",
-    "assets\\parts\\FGC-9\\stock.json",
-    "assets\\parts\\Maxus II Ultimate\\stock.json",
-    "assets\\parts\\MCX Rattler Cane\\stock.json",
-    "assets\\parts\\MP5\\stock.json",
-    "assets\\parts\\Scar 17S\\stock.json",
-    "assets\\parts\\SKS\\stock.json"
+    "assets/parts/AK-47/stock.json",
+    "assets/parts/BAR Safari Anniversary/stock.json",
+    "assets/parts/BAR ShortTrac Hog Stalker Realtree Max/stock.json",
+    "assets/parts/Barretta 50 cal/stock.json",
+    "assets/parts/FGC-9/stock.json",
+    "assets/parts/MCX Rattler Cane/stock.json",
+    "assets/parts/MP5/stock.json",
+    "assets/parts/Maxus II Ultimate/stock.json",
+    "assets/parts/SKS/stock.json",
+    "assets/parts/Scar 17S/stock.json"
   ],
   "sight": [
-    "assets\\parts\\BAR Safari Anniversary\\sight.json",
-    "assets\\parts\\Barretta 50 cal\\sight.json",
-    "assets\\parts\\FGC-9\\sight.json"
+    "assets/parts/BAR Safari Anniversary/sight.json",
+    "assets/parts/Barretta 50 cal/sight.json",
+    "assets/parts/FGC-9/sight.json"
   ],
   "attachment": [
-    "assets\\parts\\Barretta 50 cal\\attachment.json"
+    "assets/parts/Barretta 50 cal/attachment.json"
   ],
   "muzzle": [
-    "assets\\parts\\Barretta 50 cal\\muzzle.json",
-    "assets\\parts\\MCX Rattler Cane\\muzzle.json",
-    "assets\\parts\\Scar 17S\\muzzle.json",
-    "assets\\parts\\SKS\\muzzle.json"
+    "assets/parts/Barretta 50 cal/muzzle.json",
+    "assets/parts/MCX Rattler Cane/muzzle.json",
+    "assets/parts/Scar 17S/muzzle.json"
   ],
   "pistol": [
-    "assets\\parts\\Colt Python\\pistol.json",
-    "assets\\parts\\French Liberator\\pistol.json",
-    "assets\\parts\\Glock 19\\pistol.json",
-    "assets\\parts\\P210 target\\pistol.json"
+    "assets/parts/Colt Python/pistol.json",
+    "assets/parts/French Liberator/pistol.json",
+    "assets/parts/Glock 19/pistol.json",
+    "assets/parts/P210 target/pistol.json"
   ]
 }
