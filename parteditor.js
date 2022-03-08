@@ -45,6 +45,7 @@ function draw() {
 
 function windowResized() {
     resizeCanvas(windowWidth - 260, windowHeight - 40);
+    workspace.cacheMouseArea = null;
 }
 
 function newPartButton() {
