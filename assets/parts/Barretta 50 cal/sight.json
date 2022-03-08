@@ -3,7 +3,7 @@
   "basegun": "Barretta 50 cal",
   "type": "sight",
   "image": "assets\\images\\Berretta 50 cal\\sight.png",
-  "scale": 1,
+  "scale": 1.2,
   "attachments": [
     {
       "x": 0.4,

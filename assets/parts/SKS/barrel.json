@@ -3,7 +3,7 @@
   "basegun": "SKS",
   "type": "barrel",
   "image": "assets\\images\\SKS\\barrel.png",
-  "scale": 0.61,
+  "scale": 0.49,
   "attachments": [
     {
       "x": -1,

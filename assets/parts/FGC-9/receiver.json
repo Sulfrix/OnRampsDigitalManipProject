@@ -3,7 +3,7 @@
   "basegun": "FGC-9",
   "type": "receiver",
   "image": "assets\\images\\FGC-9\\receiver.png",
-  "scale": 0.6,
+  "scale": 0.9,
   "attachments": [
     {
       "x": -0.9923813538112989,

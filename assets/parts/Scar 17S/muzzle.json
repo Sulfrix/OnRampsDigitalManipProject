@@ -3,7 +3,7 @@
   "basegun": "SCAR 17S",
   "type": "muzzle",
   "image": "assets\\images\\SCAR 17S\\muzzle.png",
-  "scale": 0.76,
+  "scale": 0.84,
   "attachments": [
     {
       "x": 1,
