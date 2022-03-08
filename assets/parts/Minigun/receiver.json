@@ -3,7 +3,7 @@
   "basegun": "Minigun",
   "type": "receiver",
   "image": "assets\\images\\Minigun\\receiver.png",
-  "scale": 0.2,
+  "scale": 0.35,
   "attachments": [
     {
       "x": -1,

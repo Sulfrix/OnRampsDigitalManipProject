@@ -3,7 +3,7 @@
   "basegun": "SCAR 17S",
   "type": "receiver",
   "image": "assets\\images\\SCAR 17S\\receiver.png",
-  "scale": 1,
+  "scale": 0.76,
   "attachments": [
     {
       "x": -1,
