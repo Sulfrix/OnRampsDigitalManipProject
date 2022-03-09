@@ -1,8 +1,27 @@
 {
   "name": "Kitchen Bayonet",
-  "basegun": "",
   "type": "attachment",
   "image": "assets\\images\\Single attachments\\Kitchen Bayonet.png",
   "scale": 0.33,
-  "attachments": []
+  "basegun": "",
+  "attachments": [
+    {
+      "x": 0.1703371079362681,
+      "y": -0.5462489759219407,
+      "type": "muzzle",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 200
+    },
+    {
+      "x": 0.1495190135493205,
+      "y": -0.5438999563908665,
+      "type": "muzzle",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 200
+    }
+  ]
 }

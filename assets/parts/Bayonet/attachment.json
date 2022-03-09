@@ -1,8 +1,27 @@
 {
   "name": "Bayonet",
-  "basegun": "",
   "type": "attachment",
   "image": "assets\\images\\Single attachments\\Bayonet.png",
   "scale": 0.33,
-  "attachments": []
+  "basegun": "",
+  "attachments": [
+    {
+      "x": 0.168236701398234,
+      "y": -0.5425824928775486,
+      "type": "muzzle",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 200
+    },
+    {
+      "x": 0.14593565977616052,
+      "y": -0.5487006718963178,
+      "type": "muzzle",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 200
+    }
+  ]
 }
