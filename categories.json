@@ -40,7 +40,9 @@
   "sight": [
     "assets/parts/BAR Safari Anniversary/sight.json",
     "assets/parts/Barretta 50 cal/sight.json",
-    "assets/parts/FGC-9/sight.json"
+    "assets/parts/EOTECH Holographic sight/sight.json",
+    "assets/parts/FGC-9/sight.json",
+    "assets/parts/Red dot sight/sight.json"
   ],
   "attachment": [
     "assets/parts/Barretta 50 cal/attachment.json",
