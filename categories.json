@@ -43,7 +43,12 @@
     "assets/parts/FGC-9/sight.json"
   ],
   "attachment": [
-    "assets/parts/Barretta 50 cal/attachment.json"
+    "assets/parts/Barretta 50 cal/attachment.json",
+    "assets/parts/Bayonet/attachment.json",
+    "assets/parts/Flashlight/attachment.json",
+    "assets/parts/Foregrip/attachment.json",
+    "assets/parts/Kitchen Bayonet/attachment.json",
+    "assets/parts/Lazer Sight/attachment.json"
   ],
   "muzzle": [
     "assets/parts/Barretta 50 cal/muzzle.json",
