@@ -3,6 +3,6 @@
   "basegun": "",
   "type": "sight",
   "image": "assets\\images\\Single Sights\\Red Dot Sight.png",
-  "scale": 1,
+  "scale": 0.33,
   "attachments": []
 }
