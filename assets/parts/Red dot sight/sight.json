@@ -1,8 +1,8 @@
 {
-  "name": "Red dot sight",
+  "name": "Red Dot Sight",
   "basegun": "",
   "type": "sight",
-  "image": "assets\\images\\Single Sights\\Red dot sight.png",
+  "image": "assets\\images\\Single Sights\\Red Dot Sight.png",
   "scale": 1,
   "attachments": []
 }
