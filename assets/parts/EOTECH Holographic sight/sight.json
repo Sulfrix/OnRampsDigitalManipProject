@@ -1,0 +1,8 @@
+{
+  "name": "EOTECH Holographic sight",
+  "basegun": "",
+  "type": "sight",
+  "image": "assets\\images\\Single Sights\\EOTECH Holographic sight.png",
+  "scale": 1,
+  "attachments": []
+}

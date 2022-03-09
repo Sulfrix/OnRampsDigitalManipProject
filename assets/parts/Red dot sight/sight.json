@@ -1,0 +1,8 @@
+{
+  "name": "Red dot sight",
+  "basegun": "",
+  "type": "sight",
+  "image": "assets\\images\\Single Sights\\Red dot sight.png",
+  "scale": 1,
+  "attachments": []
+}
