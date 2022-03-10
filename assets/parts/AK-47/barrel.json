@@ -1,27 +1,36 @@
 {
   "name": "Barrel",
-  "basegun": "AK-47",
   "type": "barrel",
   "image": "assets\\images\\AK-47\\barrel.png",
   "scale": 0.7,
+  "basegun": "AK-47",
   "attachments": [
     {
       "x": 1,
       "y": -0.6993822923816062,
       "type": "barrel",
-      "parent": false
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 120
     },
     {
       "x": -0.9928722574896982,
       "y": 0.4551115723923198,
       "type": "muzzle",
-      "parent": true
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 120
     },
     {
-      "x": -0.17095444927052017,
-      "y": 0.9394568413769244,
+      "x": 0.14476635960097362,
+      "y": 0.9232461017619296,
       "type": "attachment",
-      "parent": true
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 120
     }
   ]
 }
