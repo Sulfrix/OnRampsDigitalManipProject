@@ -21,7 +21,8 @@
       "parent": true,
       "rotation": 0,
       "scale": 1,
-      "elipson": 200
+      "elipson": 200,
+      "reject": ["Bayonet", "Kitchen Bayonet"]
     }
   ]
 }
