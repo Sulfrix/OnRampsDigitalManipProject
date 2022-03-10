@@ -1,8 +1,18 @@
 {
   "name": "Red Dot Sight",
-  "basegun": "",
   "type": "sight",
   "image": "assets\\images\\Single Sights\\Red Dot Sight.png",
   "scale": 0.33,
-  "attachments": []
+  "basegun": "",
+  "attachments": [
+    {
+      "x": 0.6431424876501421,
+      "y": 0.9567209704550299,
+      "type": "sight",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 120
+    }
+  ]
 }

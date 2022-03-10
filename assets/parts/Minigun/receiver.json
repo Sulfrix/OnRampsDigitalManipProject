@@ -1,15 +1,27 @@
 {
   "name": "Receiver",
-  "basegun": "Minigun",
   "type": "receiver",
   "image": "assets\\images\\Minigun\\receiver.png",
-  "scale": 0.53,
+  "scale": 0.33,
+  "basegun": "Minigun",
   "attachments": [
     {
       "x": -1,
       "y": -0.10337828041177344,
       "type": "barrel",
-      "parent": true
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 120
+    },
+    {
+      "x": 0.2722734367883113,
+      "y": -0.39861663549599546,
+      "type": "sight",
+      "parent": true,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 120
     }
   ]
 }

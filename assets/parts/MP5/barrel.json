@@ -27,7 +27,7 @@
       "x": -0.38091657828538683,
       "y": 0.6317255734197345,
       "type": "attachment",
-      "parent": false,
+      "parent": true,
       "rotation": 0,
       "scale": 1,
       "elipson": 25
