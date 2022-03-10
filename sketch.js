@@ -6,6 +6,8 @@ let canvas;
 
 let categories;
 
+let helpEle;
+
 function preload() {
   categories = loadJSON("categories.json");
 }
@@ -30,3 +32,16 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   workspace.cacheMouseArea = null;
 }
+
+function openHelp() {
+  helpEle = document.createElement("iframe");
+  helpEle.src = "helppage.html";
+  document.body.appendChild(helpEle);
+}
+
+window.addEventListener("message", (e) => {
+  if (e.data == "closeMePlease") {
+    helpEle.remove();
+    helpEle = null;
+  }
+})
