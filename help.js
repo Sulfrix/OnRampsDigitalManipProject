@@ -37,20 +37,25 @@ function draw() {
             image(images[0], width/2, 500, images[0].width*0.5, images[0].height*0.5);
             break;
         case 1:
+            text("Using the Workspace", width/2, 40);
+            textSize(22);
+            text("The workspace is the light gridded area on the right of the screen. It is where you see your parts and where you move and attach them.\nThere are a few controls:\nLeft Click (drag): Move parts\nRight Click (drag): Move camera\nScroll: Zoom in/out", width/2-300, 80, 600);
+            break;
+        case 2:
             text("Finding Parts", width/2, 40);
             textSize(22);
             text("On the left, you will see a sidebar. Click through the category tabs to see your options. Some tabs may have too many items to display on your screen, in which you will need to scroll. Those tabs show a scrollbar on the left side when you first click them.", width/2-300, 80, 600);
             imageMode(CENTER);
             image(images[1], width/2, 520, images[1].width*0.6, images[1].height*0.6);
             break;
-        case 2:
+        case 3:
             text("Placing Parts", width/2, 40);
             textSize(22);
             text("When you find a part you want to use, click and drag a part off of the sidebar. This will place it into the workspace. You can also drag parts onto the sidebar from the workspace to delete them.", width/2-300, 80, 600);
             imageMode(CENTER);
             image(images[2], width/2, 500, images[2].width*0.65, images[2].height*0.65);
             break;
-        case 3:
+        case 4:
             text("Attaching Parts", width/2, 40);
             textSize(22);
             text("Parts can be attached if you bring one close to a valid location on another part. When you attach parts, you can drag the smaller (child) part to detach. Dragging the bigger (parent) part will move them all.", width/2-300, 80, 600);
@@ -95,7 +100,7 @@ function mouseClicked() {
     }
     clicker ++;
     clickerTimer = 1;
-    if (clicker > 3) {
+    if (clicker > 4) {
         clicker = 0;
     }
 }
