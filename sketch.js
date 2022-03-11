@@ -95,19 +95,26 @@ function playSound(event, repeatsLeft, count) {
       }
       let audio;
       if (!audioCache[e.sounds[use]]) {
+        audioCache[e.sounds[use]] = "loading";
         audio = createAudio(sounds.sounds[e.sounds[use]].path, () => {
           audioCache[e.sounds[use]] = audio;
           audio.play();
         });
       } else {
-        audio = audioCache[e.sounds[use]];
-        audio.play();
+        if (audioCache[e.sounds[use]] != "loading") {
+          audio = audioCache[e.sounds[use]];
+          audio.play();
+        }
+        
       }
       
-      let pitch = e.pitch + (e.pitchVariance*random(-1,1));
-      let volume = e.volume + (e.volumeVariance*random(-1,1));
-      audio.speed(pitch);
-      audio.volume(volume);
+      if (audio) {
+        let pitch = e.pitch + (e.pitchVariance*random(-1,1));
+        let volume = e.volume + (e.volumeVariance*random(-1,1));
+        audio.speed(pitch);
+        audio.volume(volume);
+      }
+      
       if (r-1 > 0) {
         playSound(event, r-1, count+1)
       }
