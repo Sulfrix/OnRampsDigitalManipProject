@@ -95,6 +95,8 @@ function openDialog(which) {
     currentDialog = which;
 }
 
+window.openHelp = null;
+
 function closeDialog() {
     if (currentDialog) {
         document.getElementById("dialogOverlay").classList.add("hidden");

@@ -6,13 +6,13 @@
   "basegun": "",
   "attachments": [
     {
-      "x": 0.1703371079362681,
-      "y": -0.5462489759219407,
+      "x": 0.17555614437166622,
+      "y": -0.6514330480481616,
       "type": "muzzle",
       "parent": false,
       "rotation": 0,
       "scale": 1,
-      "elipson": 200
+      "elipson": 120
     },
     {
       "x": 0.1495190135493205,
@@ -21,8 +21,7 @@
       "parent": true,
       "rotation": 0,
       "scale": 1,
-      "elipson": 200,
-      "reject": ["Bayonet", "Kitchen Bayonet"]
+      "elipson": 120
     }
   ]
 }

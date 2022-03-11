@@ -3,7 +3,7 @@
   "basegun": "Minigun",
   "type": "barrel",
   "image": "assets\\images\\Minigun\\barrel.png",
-  "scale": 0.53,
+  "scale": 0.33,
   "attachments": [
     {
       "x": 1,

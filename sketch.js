@@ -34,9 +34,11 @@ function windowResized() {
 }
 
 function openHelp() {
-  helpEle = document.createElement("iframe");
+  if (!helpEle) {
+    helpEle = document.createElement("iframe");
   helpEle.src = "helppage.html";
   document.body.appendChild(helpEle);
+  }
 }
 
 window.addEventListener("message", (e) => {

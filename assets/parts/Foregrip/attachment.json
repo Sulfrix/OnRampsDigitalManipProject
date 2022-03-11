@@ -1,8 +1,18 @@
 {
   "name": "Foregrip",
-  "basegun": "",
   "type": "attachment",
   "image": "assets\\images\\Single attachments\\Foregrip.png",
   "scale": 0.1,
-  "attachments": []
+  "basegun": "",
+  "attachments": [
+    {
+      "x": 0.26279283719713886,
+      "y": -0.9647819280124149,
+      "type": "attachment",
+      "parent": false,
+      "rotation": 0,
+      "scale": 1,
+      "elipson": 120
+    }
+  ]
 }
