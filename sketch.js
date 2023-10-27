@@ -17,9 +17,6 @@ let musicPlaying = false;
 
 function preload() {
   categories = loadJSON("categories.json");
-  sounds = loadJSON("assets/sound/sounds.json");
-  //music = createAudio("assets/sound/music.mp3");
-
 }
 
 function setup() {
