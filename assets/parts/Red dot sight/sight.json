@@ -1,7 +1,7 @@
 {
   "name": "Red Dot Sight",
   "type": "sight",
-  "image": "assets\\images\\Single Sights\\Red Dot Sight.png",
+  "image": "assets\\images\\Single Sights\\Red dot sight.png",
   "scale": 0.33,
   "basegun": "",
   "attachments": [
