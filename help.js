@@ -1,4 +1,4 @@
-/// <reference path="types/global.d.ts"/>
+/// <reference path="types/p5/global.d.ts"/>
 
 
 let canvas

@@ -1,4 +1,4 @@
-/// <reference path="types/global.d.ts"/>
+/// <reference path="types/p5/global.d.ts"/>
 
 
 let workspace;
@@ -22,6 +22,7 @@ function preload() {
 function setup() {
   // put setup code here
   canvas = createCanvas(windowWidth, windowHeight);
+
   workspace = new FrontEndWorkspace();
   pInput.registerCanvas(canvas);
   pInput.registerWorkspace(workspace);
