@@ -59,6 +59,7 @@
   ],
   "pistol": [
     "assets/parts/Colt Python/pistol.json",
+    "assets/parts/Colt Python/cursed.json",
     "assets/parts/French Liberator/pistol.json",
     "assets/parts/Glock 19/pistol.json",
     "assets/parts/P210 target/pistol.json"

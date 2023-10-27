@@ -243,3 +243,7 @@ function expandLogic(part, expand, expandButton) {
         expandButton.innerHTML = "▼"
     }
 }
+
+function playSound() {
+    // stub
+}
