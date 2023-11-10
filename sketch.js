@@ -22,7 +22,7 @@ function setup() {
 	workspace.addTool(new ScaleTool())
 	workspace.selectTool(workspace.tools[0])
 	for (let x = 0; x < 10; x++) {
-		for (let y = 0; y < 2; y++) {
+		for (let y = 0; y < 10; y++) {
 			let node = new PNode()
 			node.pos.x = x*300
 			node.pos.y = y*300
@@ -72,6 +72,8 @@ function perfGraph(avg) {
 	noFill()
 	stroke(255)
 	line(0, avg*10, frameTimes.length*s, avg*10)
+	stroke(255, 0, 0)
+	line(0, 16*10, frameTimes.length*s, 16*10)
 	pop()
 }
 
