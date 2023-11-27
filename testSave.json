@@ -1,0 +1,370 @@
+{
+	"nodes": [
+		{
+			"uuid": "44340a63-65e8-44bd-a7c7-db4d7fba6cac",
+			"name": "Node",
+			"boundingBox": {
+				"x": -128.351334192065,
+				"y": 61.608640412191214,
+				"width": 150,
+				"height": 150
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "a2d51617-c9e8-4f10-8f86-4b12d064bd53",
+			"name": "Node",
+			"boundingBox": {
+				"x": 112.94917408901722,
+				"y": -511.1804320938505,
+				"width": 150,
+				"height": 150
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "4510b0f2-7f52-413b-b92b-eb2b5759629b",
+			"name": "Node",
+			"boundingBox": {
+				"x": 505.87809273251486,
+				"y": -467.7111777285361,
+				"width": 150,
+				"height": 150
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "675b1547-3932-43b1-9a2d-9d3d8b843779",
+			"name": "Node",
+			"boundingBox": {
+				"x": 300,
+				"y": 300,
+				"width": 150,
+				"height": 170
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "52a976a7-763e-4b23-9d38-3c193cef3950",
+			"name": "Node",
+			"boundingBox": {
+				"x": 810.4961880749869,
+				"y": -282.82231719631216,
+				"width": 99.94341481965773,
+				"height": 97.44058556064059,
+				"rot": 0.15402160103047663
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "636868b9-13a3-4162-8de6-6dbebf19c885",
+			"name": "Node",
+			"boundingBox": {
+				"x": 610.0113170360685,
+				"y": 353.810829068868,
+				"width": 79.51470846035247,
+				"height": 78.71769853925875,
+				"rot": -0.7050561188850952
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "5a7fbcc9-ecf3-4647-9713-0b618f95898d",
+			"name": "Node",
+			"boundingBox": {
+				"x": 1095.0940279719384,
+				"y": -38.5054002576195,
+				"width": 150,
+				"height": 150,
+				"rot": 0.7187674714755666
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "a322f967-5655-42d8-83cf-840c13925625",
+			"name": "Node",
+			"boundingBox": {
+				"x": 894.9943414819658,
+				"y": 178.61278093766998,
+				"width": 79.92078074752078,
+				"height": 88.6806831540807
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "6c44cc09-e6f6-4032-92b2-2aa24975625c",
+			"name": "Node",
+			"boundingBox": {
+				"x": 1377.1248411850493,
+				"y": 69.30972046371508,
+				"width": 150,
+				"height": 150
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		},
+		{
+			"uuid": "d3927e80-7018-4684-bd11-6ffa0acd0d5d",
+			"name": "Node",
+			"boundingBox": {
+				"x": 1200,
+				"y": 300,
+				"width": 150,
+				"height": 150
+			},
+			"inputSockets": [
+				{
+					"id": "a",
+					"name": "A",
+					"io": "i"
+				},
+				{
+					"id": "b",
+					"name": "B",
+					"io": "i"
+				}
+			],
+			"outputSockets": [
+				{
+					"id": "out",
+					"name": "Out",
+					"io": "o"
+				}
+			]
+		}
+	],
+	"traces": [
+		{
+			"socketA": "44340a63-65e8-44bd-a7c7-db4d7fba6cac/out",
+			"socketB": "4510b0f2-7f52-413b-b92b-eb2b5759629b/a"
+		},
+		{
+			"socketA": "44340a63-65e8-44bd-a7c7-db4d7fba6cac/out",
+			"socketB": "675b1547-3932-43b1-9a2d-9d3d8b843779/b"
+		},
+		{
+			"socketA": "a2d51617-c9e8-4f10-8f86-4b12d064bd53/out",
+			"socketB": "675b1547-3932-43b1-9a2d-9d3d8b843779/a"
+		},
+		{
+			"socketA": "a2d51617-c9e8-4f10-8f86-4b12d064bd53/out",
+			"socketB": "4510b0f2-7f52-413b-b92b-eb2b5759629b/b"
+		},
+		{
+			"socketA": "4510b0f2-7f52-413b-b92b-eb2b5759629b/out",
+			"socketB": "636868b9-13a3-4162-8de6-6dbebf19c885/a"
+		},
+		{
+			"socketA": "675b1547-3932-43b1-9a2d-9d3d8b843779/out",
+			"socketB": "52a976a7-763e-4b23-9d38-3c193cef3950/a"
+		},
+		{
+			"socketA": "4510b0f2-7f52-413b-b92b-eb2b5759629b/out",
+			"socketB": "52a976a7-763e-4b23-9d38-3c193cef3950/b"
+		},
+		{
+			"socketA": "675b1547-3932-43b1-9a2d-9d3d8b843779/out",
+			"socketB": "636868b9-13a3-4162-8de6-6dbebf19c885/b"
+		},
+		{
+			"socketA": "636868b9-13a3-4162-8de6-6dbebf19c885/out",
+			"socketB": "5a7fbcc9-ecf3-4647-9713-0b618f95898d/a"
+		},
+		{
+			"socketA": "52a976a7-763e-4b23-9d38-3c193cef3950/out",
+			"socketB": "5a7fbcc9-ecf3-4647-9713-0b618f95898d/b"
+		},
+		{
+			"socketA": "52a976a7-763e-4b23-9d38-3c193cef3950/out",
+			"socketB": "a322f967-5655-42d8-83cf-840c13925625/a"
+		},
+		{
+			"socketA": "5a7fbcc9-ecf3-4647-9713-0b618f95898d/out",
+			"socketB": "d3927e80-7018-4684-bd11-6ffa0acd0d5d/a"
+		},
+		{
+			"socketA": "a322f967-5655-42d8-83cf-840c13925625/out",
+			"socketB": "6c44cc09-e6f6-4032-92b2-2aa24975625c/a"
+		},
+		{
+			"socketA": "636868b9-13a3-4162-8de6-6dbebf19c885/out",
+			"socketB": "d3927e80-7018-4684-bd11-6ffa0acd0d5d/b"
+		},
+		{
+			"socketA": "636868b9-13a3-4162-8de6-6dbebf19c885/out",
+			"socketB": "a322f967-5655-42d8-83cf-840c13925625/b"
+		},
+		{
+			"socketA": "6c44cc09-e6f6-4032-92b2-2aa24975625c/out",
+			"socketB": "a2d51617-c9e8-4f10-8f86-4b12d064bd53/a"
+		}
+	],
+	"cameraInfo": {
+		"pos": {
+			"x": 536.6592994714601,
+			"y": -181.96987253524887
+		},
+		"zoom": 0.32307415521104166
+	}
+}

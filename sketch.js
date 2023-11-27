@@ -26,8 +26,8 @@ function setup() {
 	switchWorkspace(workspace)
 	PerfTrack.enableTracking()
 	console.log(PerfTrack.measure("Create Test Nodes", () => {
-		for (let x = 0; x < 2; x++) {
-			for (let y = 0; y < 1; y++) {
+		for (let x = 0; x < 5; x++) {
+			for (let y = 0; y < 2; y++) {
 				let node = new PNode();
 				node.pos.x = x * 300;
 				node.pos.y = y * 300;
