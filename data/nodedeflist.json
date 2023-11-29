@@ -1,0 +1,19 @@
+{
+    "nodedefs": [
+        "route.json",
+        "math/add.json",
+        "math/subtract.json",
+        "math/multiply.json",
+        "math/divide.json"
+    ],
+    "rootcategory": {
+        "name": "Root",
+        "path": "",
+        "subcategories": [
+            {
+                "name": "Math",
+                "path": "math/"
+            }
+        ]
+    }
+}

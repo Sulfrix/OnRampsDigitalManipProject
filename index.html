@@ -10,6 +10,9 @@
 				margin: 0;
 				overflow: hidden;
 				display: flex;
+				background: rgb(39, 39, 39);
+				color: white;
+				font-family: sans-serif;
 			}
 
 			main {
@@ -24,6 +27,23 @@
 				width: 100vw;
 				height: 100vh;
 			}
+
+			#menubar {
+				display: none;
+			}
+
+			#menubar > button {
+				background: transparent;
+				border: none;
+				padding: 5px 10px;
+				user-select: none;
+				color: white;
+			}
+
+			#menubar > button:hover {
+				background: rgba(255, 255, 255, 0.1);
+			}
+
 		</style>
 		<script src="./p5.js"></script>
 		<script src="lib/tools/Tool.js"></script>
@@ -32,6 +52,7 @@
 		<script src="lib/tools/RotateTool.js"></script>
 		<script src="lib/tools/ScaleTool.js"></script>
 		<script src="lib/tools/TraceEditTool.js"></script>
+		<script src="lib/NodeDef.js"></script>
 		<script src="lib/util.js"></script>
 		<script src="lib/Socket.js"></script>
 		<script src="lib/Trace.js"></script>
@@ -49,6 +70,11 @@
 	</head>
 
 	<body>
-		<main></main>
+		<div id="app-container">
+			<div id="menubar">
+				<button>File</button>
+			</div>
+			<main></main>
+		</div>
 	</body>
 </html>

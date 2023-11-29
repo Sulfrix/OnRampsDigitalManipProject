@@ -1,0 +1,23 @@
+{
+    "name": "Multiply",
+    "inputs": [
+        {
+            "id": "a",
+            "name": "A",
+            "type": "number"
+        },
+        {
+            "id": "b",
+            "name": "B",
+            "type": "number"
+        }
+    ],
+    "outputs": [
+        {
+            "id": "out",
+            "name": "Out",
+            "type": "number",
+            "expression": "({a} * {b})"
+        }
+    ]
+}

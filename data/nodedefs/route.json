@@ -1,0 +1,18 @@
+{
+    "name": "Route",
+    "inputs": [
+        {
+            "id": "in",
+            "name": "",
+            "type": "any"
+        }
+    ],
+    "outputs": [
+        {
+            "id": "out",
+            "name": "",
+            "type": "$typeof(in)",
+            "expression": "({in})"
+        }
+    ]
+}

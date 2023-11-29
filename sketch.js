@@ -6,7 +6,9 @@ let canvas;
 
 let perfGraph
 
-function preload() {}
+function preload() {
+	NodeDef.loadNodeDefs()
+}
 
 function workspaceTemplate() {
 	return Workspace.newFromTemplate()
@@ -24,10 +26,10 @@ function setup() {
 
 	workspace = workspaceTemplate()
 	switchWorkspace(workspace)
-	PerfTrack.enableTracking()
+	//PerfTrack.enableTracking()
 	console.log(PerfTrack.measure("Create Test Nodes", () => {
-		for (let x = 0; x < 5; x++) {
-			for (let y = 0; y < 2; y++) {
+		for (let x = 0; x < 0; x++) {
+			for (let y = 0; y < 0; y++) {
 				let node = new PNode();
 				node.pos.x = x * 300;
 				node.pos.y = y * 300;
