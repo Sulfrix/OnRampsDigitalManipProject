@@ -1,6 +1,7 @@
 {
     "nodedefs": [
         "route.json",
+        "testnode.json",
         "math/add.json",
         "math/subtract.json",
         "math/multiply.json",

@@ -32,9 +32,10 @@ function setup() {
 
 	let testnodes = () => {
 		let testnodesperf = PerfTrack.measure("Create Test Nodes", () => {
+			let possibleNodes = Object.keys(NodeDef.defMap)
 			for (let x = 0; x < 10; x++) {
 				for (let y = 0; y < 10; y++) {
-					let node = NodeDef.createFromPath("math/divide");
+					let node = NodeDef.createFromPath(possibleNodes[floor(random(0, possibleNodes.length))]);
 					node.pos.x = x * 300;
 					node.pos.y = y * 300;
 					workspace.addNode(node);

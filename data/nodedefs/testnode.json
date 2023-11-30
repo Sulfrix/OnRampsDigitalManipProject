@@ -1,0 +1,37 @@
+{
+    "name": "Test Node",
+    "inputs": [
+        {
+            "id": "inA",
+            "name": "In A",
+            "type": "any"
+        },
+        {
+            "id": "inB",
+            "name": "In B",
+            "type": "any"
+        },
+        {
+            "id": "inC",
+            "name": "In C",
+            "type": "any"
+        }
+    ],
+    "outputs": [
+        {
+            "id": "outA",
+            "name": "Out A",
+            "type": "any"
+        },
+        {
+            "id": "outB",
+            "name": "Out B",
+            "type": "any"
+        },
+        {
+            "id": "outC",
+            "name": "Out C",
+            "type": "any"
+        }
+    ]
+}
